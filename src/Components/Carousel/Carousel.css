@@ -1,0 +1,63 @@
+.carousel {
+  padding: 4em 0em;
+}
+/* .carousel-Header-icon {
+  padding: 1em;
+  border-radius: 50%;
+  display: grid;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.carousel-Header-text {
+  padding: 1em;
+  display: grid;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.carousel-body {
+  width: inherit;
+  padding: 0;
+} */
+.item-header {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.item-header svg {
+  font-size: 80px;
+  background: #003a6a;
+  padding: 10px;
+  color: white;
+}
+.item-header-right {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  font-size: 12px;
+}
+.item-header-right span:first-child {
+  font-size: 15px;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+.item-header-right span:last-child {
+  font-size: 13px;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+.carousel-body {
+  margin-bottom: 2em;
+}
+.carousel-footer h6 {
+  color: #003a6a;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.carousel-footer p {
+  font-size: 14px;
+  font-weight: 400;
+}

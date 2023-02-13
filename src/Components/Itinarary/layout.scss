@@ -1,0 +1,89 @@
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+@media only screen and (max-width: 1024px) {
+  .itinarary-main {
+    .tube {
+      display: none;
+    }
+    .content-div {
+      display: block;
+      .line {
+        display: none;
+      }
+      &.reverse-row {
+        display: block;
+        .itinarary-left {
+          width: 100%;
+        }
+        .itinarary-right {
+          width: 100%;
+          .day-reverse {
+            position: absolute;
+
+            right: 45%;
+            top: -50px;
+          }
+        }
+      }
+      .itinarary-left {
+        width: 100%;
+      }
+      .itinarary-right {
+        width: 100%;
+        .day-container {
+          position: absolute;
+
+          left: 45%;
+          top: -50px;
+        }
+      }
+    }
+  }
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media only screen and (max-width: 768px) {
+  .inside {
+    top: 15em;
+    .input-s {
+      margin-bottom: 10px;
+    }
+  }
+  .subscribe-box {
+    margin-top: 20px;
+  }
+  .item-container {
+    margin-bottom: 3em;
+  }
+  .doc-bottom {
+    .space {
+      margin-bottom: 20px;
+    }
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) {
+  .date-box .date-left {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .date-box .date-left span:first-child {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .subscribe-box .subscribe-box-right span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    height: 100%;
+    padding: 5px;
+  }
+  .selector {
+    background-color: #f00;
+  }
+}

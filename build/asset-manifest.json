@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/bvbthrissur/static/css/main.3dc5a29f.css",
+    "main.js": "/bvbthrissur/static/js/main.9c1c291d.js",
+    "static/js/787.b5df1556.chunk.js": "/bvbthrissur/static/js/787.b5df1556.chunk.js",
+    "static/media/Image6.jpg": "/bvbthrissur/static/media/Image6.7284e4b721e6ac1c8ae6.jpg",
+    "static/media/Image2.jpg": "/bvbthrissur/static/media/Image2.0b8ca7f10cdc1457286c.jpg",
+    "static/media/Image5.jpg": "/bvbthrissur/static/media/Image5.b0eee255e1a3de739ca9.jpg",
+    "static/media/Image9.jpg": "/bvbthrissur/static/media/Image9.973e39bd20e5a0d52f95.jpg",
+    "static/media/Image1.jpg": "/bvbthrissur/static/media/Image1.7d04e3c5bc79731a736c.jpg",
+    "static/media/Image7.jpg": "/bvbthrissur/static/media/Image7.b6a1ee95be60a9c5e0a8.jpg",
+    "static/media/Image3.jpg": "/bvbthrissur/static/media/Image3.f861bd2c465e2a594258.jpg",
+    "static/media/Image10.jpg": "/bvbthrissur/static/media/Image10.73baf1e5b33635e45d65.jpg",
+    "static/media/Image8.jpg": "/bvbthrissur/static/media/Image8.70b628df45b1bf14e463.jpg",
+    "static/media/Image4.jpg": "/bvbthrissur/static/media/Image4.f1f32613232609e0e813.jpg",
+    "static/media/logo.png": "/bvbthrissur/static/media/logo.cb6e0a8a767ce7119da1.png",
+    "index.html": "/bvbthrissur/index.html",
+    "main.3dc5a29f.css.map": "/bvbthrissur/static/css/main.3dc5a29f.css.map",
+    "main.9c1c291d.js.map": "/bvbthrissur/static/js/main.9c1c291d.js.map",
+    "787.b5df1556.chunk.js.map": "/bvbthrissur/static/js/787.b5df1556.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3dc5a29f.css",
+    "static/js/main.9c1c291d.js"
+  ]
+}

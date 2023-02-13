@@ -1,0 +1,69 @@
+.doc-container {
+  background-color: #eff1f6;
+  padding: 7em 0em;
+}
+
+.doc-container::before {
+  display: table;
+}
+.doc-left {
+  display: table;
+  position: relative;
+}
+.doc-left .main-header-text {
+  font-size: 4.143em;
+  font-weight: 900;
+  color: #3c4251;
+}
+.doc-left .sub-header-text {
+  font-size: 2.143em;
+  font-weight: 900;
+}
+.doc-left-bottom {
+  margin-top: 1em;
+}
+.doc-left-bottom::before {
+  content: " ";
+  position: absolute;
+  width: 7em;
+  height: 3px;
+  background: rgb(0, 58, 106);
+}
+.doc-right {
+  font-size: 14px;
+}
+.service {
+  display: flex;
+  gap: 1.5em;
+  /* align-items: center; */
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.65em;
+  height: 3.65em;
+  border-radius: 50%;
+  background: rgb(0, 58, 106);
+}
+.icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.icon-text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.icon-text-div span:first-child {
+  font-weight: 400;
+  font-size: 16px;
+}
+.icon-text-div span:last-child {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.doc-bottom {
+  margin-top: 3em;
+}
