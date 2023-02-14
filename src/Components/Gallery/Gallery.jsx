@@ -17,7 +17,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 // import { calculateNewValue } from "@testing-library/user-event/dist/utils";
 
 const PhotoGallery = ({ pageRef, pageNumber }) => {
-  const [scrollLeft, setScrollLeft] = useState(0);
+  // const [scrollLeft, setScrollLeft] = useState(0);
 
   // const handleScrollLeft = () => {
   //   setScrollLeft(scrollLeft - 361);

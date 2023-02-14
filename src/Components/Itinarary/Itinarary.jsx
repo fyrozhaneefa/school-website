@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./Itinarary.scss";
 import "./layout.scss";
 import { HiMapPin } from "react-icons/hi2";
-import { IoCart } from "react-icons/io5";
-import { IoMdRestaurant } from "react-icons/io";
-import { FaStreetView } from "react-icons/fa";
+// import { IoCart } from "react-icons/io5";
+// import { IoMdRestaurant } from "react-icons/io";
+// import { FaStreetView } from "react-icons/fa";
 
 const Itinarary = ({ pageRef, pageNumber }) => {
   return (

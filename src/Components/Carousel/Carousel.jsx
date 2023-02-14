@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Col, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import { TbPlane } from "react-icons/tb";
 import { FaHotel } from "react-icons/fa";

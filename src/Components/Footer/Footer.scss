@@ -1,0 +1,14 @@
+.footer-container {
+  padding: 2rem 0;
+  background-color: #3c4251;
+  opacity: 60%;
+  bottom: 0;
+  color: white;
+}
+.icon-container {
+  display: flex;
+  justify-content: flex-start;
+  .icons {
+    padding: 4px;
+  }
+}

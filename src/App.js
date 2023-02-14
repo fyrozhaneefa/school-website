@@ -8,8 +8,15 @@ import HomePage from "./Components/HomePage/HomePage";
 import Documentations from "./Components/Documentations/Documentations";
 import Itinarary from "./Components/Itinarary/Itinarary";
 import PhotoGallery from "./Components/Gallery/Gallery";
+import Info from "./Components/Info/Info";
+import Contact from "./Components/Contact/Contact";
+import Feedback from "./Components/Feedback/Feedback";
+
 function App() {
   const pageRefs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
     useRef(null),
     useRef(null),
     useRef(null),
@@ -27,6 +34,9 @@ function App() {
       <TravelInfoCarousel pageRef={pageRefs[2]} pageNumber={3} />
       <Itinarary pageRef={pageRefs[3]} pageNumber={4} />
       <PhotoGallery pageRef={pageRefs[4]} pageNumber={5} />
+      <Feedback pageRef={pageRefs[5]} pageNumber={6} />
+      <Info pageRef={pageRefs[6]} pageNumber={7} />
+      <Contact pageRef={pageRefs[7]} pageNumber={8} />
     </div>
   );
 }

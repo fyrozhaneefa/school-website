@@ -3,7 +3,7 @@ import "./Navbar.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+// import NavDropdown from "react-bootstrap/NavDropdown";
 import { FaHome } from "react-icons/fa";
 import logo from "../Assets/logo/logo.png";
 const NavbarResponsive = ({ scrollToPage }) => {
@@ -30,6 +30,9 @@ const NavbarResponsive = ({ scrollToPage }) => {
               <Nav.Link onClick={() => scrollToPage(2)}>SERVICE</Nav.Link>
               <Nav.Link onClick={() => scrollToPage(3)}>ITINARARY</Nav.Link>
               <Nav.Link onClick={() => scrollToPage(4)}>GALLERY</Nav.Link>
+              <Nav.Link onClick={() => scrollToPage(5)}>FEEDBACK</Nav.Link>
+              <Nav.Link onClick={() => scrollToPage(6)}>ABOUT</Nav.Link>
+              <Nav.Link onClick={() => scrollToPage(7)}>CONTACT</Nav.Link>
               {/* <Nav.Link href="#contact">CONTACT</Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
