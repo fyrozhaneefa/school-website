@@ -104,16 +104,23 @@ const Info = ({ pageRef, pageNumber }) => {
               </Col>
               <Col md={6}>
                 <div className="info-right">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  scelerisque, purus sit amet elementum blandit, sem arcu
-                  egestas quam, eget malesuada sem libero eu ante. Duis nec
-                  ultricies enim. Sed cursus volutpat finibus. Morbi at ornare
-                  purus. Vivamus congue suscipit dui nec fringilla. Nam auctor
-                  velit nec nisi molestie, ut maximus libero euismod. Nam dolor
-                  nunc, consequat nec sollicitudin vel, commodo vitae ex.
-                  Vestibulum rhoncus mollis felis in auctor. Donec at ultricies
-                  erat, eu pulvinar est. Integer pretium nunc quis dui
-                  sollicitudin commodo.
+                  Founded in 1939 by Dr. K.M. Munshi, Bharatiya Vidya Bhavan is
+                  today an All India intellectual, cultural and educational
+                  movement dedicated to the twin task of interpreting the age
+                  old yet ageless message of our country and of integrating our
+                  varied and vibrant culture with the changing needs of the
+                  present day world. During the seven decades of its existence,
+                  the Bhavan has come to be recognised as a symbol of India’s
+                  glorious past and as a comprehensive national institution with
+                  an international outlook touching all aspects of life and
+                  enriching all spheres of activity . Bharatiya Vidya Bhavan
+                  conducts classes from Kindergarten to Post Graduate research
+                  and imparts education in subjects ranging from Carnatic Music
+                  to Engineering, from Sanskrit to Business Management and from
+                  Yoga to Journalism. This is being accomplished through its
+                  centres spread all over the country and abroad, through
+                  cultural and educational programmes it conducts from time to
+                  time and above all through personal discussions and dialogue.
                 </div>
               </Col>
             </Row>
@@ -129,8 +136,8 @@ const Info = ({ pageRef, pageNumber }) => {
                 <MdLocationPin color="white" size={30} />
               </div>
               <div className="icon-text-div">
-                <span>123 Main Street</span>
-                <span>Your City, State Country.</span>
+                <span>Sarva Dharma Maitri Pratishthan Complex</span>
+                <span>Vadakkechira Road, Thrissur</span>
               </div>
             </div>
           </Col>
@@ -140,8 +147,8 @@ const Info = ({ pageRef, pageNumber }) => {
                 <BsFillTelephoneFill color="white" size={30} />
               </div>
               <div className="icon-text-div">
-                <span>(123) 456-7890</span>
-                <span>(123) 456-7890</span>
+                <span>(+91) 93887 80503</span>
+                <span>(+91) 93887 80522</span>
               </div>
             </div>
           </Col>
@@ -151,7 +158,7 @@ const Info = ({ pageRef, pageNumber }) => {
                 <IoMail color="white" size={30} />
               </div>
               <div className="icon-text-div">
-                <a href="info@companyname.com">contact@companyname.com</a>
+                <a href="info@companyname.com"> bvbthrissur@gmail.com</a>
               </div>
             </div>
           </Col>

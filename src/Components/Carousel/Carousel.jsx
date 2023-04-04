@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
-import { TbPlane } from "react-icons/tb";
-import { FaHotel } from "react-icons/fa";
-import { BiTrain } from "react-icons/bi";
-import { GiShipBow } from "react-icons/gi";
-import { IoMdRestaurant } from "react-icons/io";
+import { RiComputerFill } from "react-icons/ri";
+import { FiActivity } from "react-icons/fi";
+import { ImLab } from "react-icons/im";
 import "./Carousel.css";
+import { IoLibrary } from "react-icons/io5";
+import { FaHome } from "react-icons/fa";
+import { MdOutlineSportsSoccer } from "react-icons/md";
+import computer from "../Assets/CarouselImages/computer.jpg";
+import fitness from "../Assets/CarouselImages/fitness.jpg";
+import hostel from "../Assets/CarouselImages/hostel.jpg";
+import lab from "../Assets/CarouselImages/lab.jpg";
+import library from "../Assets/CarouselImages/library.jpg";
+import creative from "../Assets/CarouselImages/creative.jpg";
 
 const TravelInfoCarousel = ({ pageRef, pageNumber }) => {
   const [index, setIndex] = useState(0);
@@ -22,85 +29,92 @@ const TravelInfoCarousel = ({ pageRef, pageNumber }) => {
         activeIndex={index}
         onSelect={handleSelect}
         slide={false}
+        fade={true}
       >
-        <Carousel.Item className="carousel-container">
+        <Carousel.Item className="carousel-container carousel-item">
           <Row>
             <Col md={4} className="item-container">
               <div className="item-header">
-                <TbPlane />
+                <IoLibrary />
                 <div className="item-header-right">
-                  <span>FLIGHT INFORMATION</span>
-                  <span>Arrival and Departure</span>
+                  <span style={{}}>KNOWLEDGE HUB</span>
+                  <span>Collection of Books</span>
                 </div>
               </div>
               <Row className="carousel-body" style={{ width: "100%" }}>
                 <img
-                  src="https://images.unsplash.com/photo-1587019158091-1a103c5dd17f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmxpZ2h0fGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                  src={library}
+                  // src="https://images.unsplash.com/photo-1587019158091-1a103c5dd17f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZmxpZ2h0fGVufDB8fDB8fA%3D%3D&w=1000&q=80"
                   style={{ width: "100%", height: "200px" }}
                   alt=""
                 />
               </Row>
               <Row className="carousel-footer">
-                <h6>AIRPORT</h6>
+                <h6>LIBRARY</h6>
                 <p>
-                  Lorem ipsum dolor sit ametr consectetur adipi scing elit.
-                  Donec feugiat iaculis tortor molestie. Nunc imperdiet commodo
-                  nunc, a porta eros iaculis sit amet iaculis tortor molestie
-                  iaculis tortor molestie.
+                  The institution has a well-stocked library that provides
+                  students access to a vast collection of books, journals,
+                  magazines, and other study materials. This facility helps
+                  students expand their knowledge base and improve their
+                  academic performance.
                 </p>
               </Row>
             </Col>{" "}
             <Col md={4} className="item-container">
               <div className="item-header">
-                <FaHotel />
+                <RiComputerFill />
                 <div className="item-header-right">
-                  <span>HOTEL INFORMATION</span>
-                  <span>Accomodation and Dining</span>
+                  <span>TECH ZONE</span>
+                  <span>Technology Access</span>
                 </div>
               </div>
 
               <Row className="carousel-body" style={{ width: "100%" }}>
                 <img
-                  src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/hotel.jpg"
+                  src={computer}
+                  // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/hotel.jpg"
                   style={{ width: "100%", height: "200px" }}
                   alt=""
                 />
               </Row>
               <Row className="carousel-footer">
-                <h6>HOTEL</h6>
+                <h6>COMPUTER LAB</h6>
 
                 <p>
-                  Lorem ipsum dolor sit ametr consectetur adipi scing elit.
-                  Donec feugiat iaculis tortor molestie. Nunc imperdiet commodo
-                  nunc, a porta eros iaculis sit amet iaculis tortor molestie
-                  iaculis tortor molestie.
+                  The institution has a modern computer lab with advanced
+                  infrastructure, which allows students to use computers and
+                  internet facilities for research, project work, and other
+                  academic purposes. This facility helps students to stay
+                  updated with the latest technology and gain practical
+                  knowledge.
                 </p>
               </Row>
             </Col>
             <Col md={4} className="item-container">
               <div className="item-header">
-                <IoMdRestaurant />
+                <ImLab />
                 <div className="item-header-right">
-                  <span>RESTAURANT INFORMATION</span>
-                  <span>Dining</span>
+                  <span>SCIENCE HUB</span>
+                  <span>Science Equipment</span>
                 </div>
               </div>
 
               <Row className="carousel-body" style={{ width: "100%" }}>
                 <img
-                  src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
+                  src={lab}
+                  // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
                   style={{ width: "100%", height: "200px" }}
                   alt=""
                 />
               </Row>
               <Row className="carousel-footer">
-                <h6>RESTAURANT</h6>
+                <h6>LABORATORY</h6>
 
                 <p>
-                  Lorem ipsum dolor sit ametr consectetur adipi scing elit.
-                  Donec feugiat iaculis tortor molestie. Nunc imperdiet commodo
-                  nunc, a porta eros iaculis sit amet iaculis tortor molestie
-                  iaculis tortor molestie.
+                  The institution has well-equipped laboratories for science
+                  students to conduct experiments and research work. This
+                  facility helps students to gain hands-on experience and
+                  develop their analytical skills.
                 </p>
               </Row>
             </Col>
@@ -112,79 +126,85 @@ const TravelInfoCarousel = ({ pageRef, pageNumber }) => {
           <Row>
             <Col md={4} className="item-container">
               <div className="item-header">
-                <BiTrain />
+                <MdOutlineSportsSoccer />
                 <div className="item-header-right">
-                  <span>TRAIN INFORMATION</span>
-                  <span>Arrival and Departure</span>
+                  <span>FITNESS ZONE</span>
+                  <span>Fitness Opportunities</span>
                 </div>
               </div>
 
               <Row className="carousel-body" style={{ width: "100%" }}>
                 <img
-                  src="https://images.pexels.com/photos/28614/pexels-photo.jpg"
+                  src={fitness}
+                  // src="https://images.pexels.com/photos/28614/pexels-photo.jpg"
                   style={{ width: "100%", height: "200px" }}
                   alt=""
                 />
               </Row>
               <Row className="carousel-footer">
-                <h6>TRAINS</h6>
+                <h6>SPORT FACILITIES</h6>
                 <p>
-                  Lorem ipsum dolor sit ametr consectetur adipi scing elit.
-                  Donec feugiat iaculis tortor molestie. Nunc imperdiet commodo
-                  nunc, a porta eros iaculis sit amet iaculis tortor molestie
-                  iaculis tortor molestie.
+                  Bharatiya Vidya Bhavan Thrissur provides various sports
+                  facilities such as playgrounds, gymnasium, and indoor game
+                  facilities to encourage students to participate in physical
+                  activities. This facility helps students to stay fit, healthy,
+                  and improve their overall well-being.
                 </p>
               </Row>
             </Col>{" "}
             <Col md={4} className="item-container">
               <div className="item-header">
-                <GiShipBow />
+                <FaHome />
                 <div className="item-header-right">
-                  <span>CRUISE INFORMATION</span>
-                  <span>Arrival and Departure</span>
+                  <span>HOME AWAY FROM HOME</span>
+                  <span>Student Accommodation</span>
                 </div>
               </div>
               <Row className="carousel-body" style={{ width: "100%" }}>
                 <img
-                  src="https://images.pexels.com/photos/775294/pexels-photo-775294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src={hostel}
+                  // src="https://images.pexels.com/photos/775294/pexels-photo-775294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   style={{ width: "100%", height: "200px" }}
                   alt=""
                 />
               </Row>
               <Row className="carousel-footer">
-                <h6>CRUISE</h6>
+                <h6>HOSTEL FACILITIES</h6>
 
                 <p>
-                  Lorem ipsum dolor sit ametr consectetur adipi scing elit.
-                  Donec feugiat iaculis tortor molestie. Nunc imperdiet commodo
-                  nunc, a porta eros iaculis sit amet iaculis tortor molestie
-                  iaculis tortor molestie.
+                  The institution provides hostel facilities for outstation
+                  students with well-furnished rooms, nutritious food, and a
+                  comfortable environment for studying and living. This facility
+                  helps students to focus on their studies and feel at ease in
+                  an unfamiliar place.
                 </p>
               </Row>
             </Col>
             <Col md={4} className="item-container">
               <div className="item-header">
-                <IoMdRestaurant />
+                <FiActivity />
                 <div className="item-header-right">
-                  <span>RESTAURANT INFORMATION</span>
-                  <span>Arrival and Departure</span>
+                  <span>CREATIVE HUB</span>
+                  <span>Creative Pursuits</span>
                 </div>
               </div>
               <Row className="carousel-body" style={{ width: "100%" }}>
                 <img
-                  src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
+                  src={creative}
+                  // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
                   style={{ width: "100%", height: "200px" }}
                   alt=""
                 />
               </Row>
               <Row className="carousel-footer">
-                <h6>RESTAURANT</h6>
+                <h6>CULTURAL AND EXTRACURRICULAR ACTIVITIES</h6>
 
                 <p>
-                  Lorem ipsum dolor sit ametr consectetur adipi scing elit.
-                  Donec feugiat iaculis tortor molestie. Nunc imperdiet commodo
-                  nunc, a porta eros iaculis sit amet iaculis tortor molestie
-                  iaculis tortor molestie.
+                  The institution organizes various cultural and extracurricular
+                  activities, such as seminars, workshops, debates, music, and
+                  dance competitions, to enhance the overall development of
+                  students. This facility helps students to improve their
+                  creative skills, socialize, and develop their personality.
                 </p>
               </Row>
             </Col>

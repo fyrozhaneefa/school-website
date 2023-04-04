@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
 // import Navbar from "../Navbar/Navbar";
 import "./Homepage.css";
-import Image1 from "../Assets/Images/Image1.jpg";
-import Image2 from "../Assets/Images/Image2.jpg";
-import Image3 from "../Assets/Images/Image3.jpg";
-import Image4 from "../Assets/Images/Image4.jpg";
+import Image1 from "../Assets/WebsiteImages/01.jpg";
+import Image2 from "../Assets/WebsiteImages/06.jpg";
+import Image3 from "../Assets/WebsiteImages/03.jpg";
+import Image4 from "../Assets/WebsiteImages/04.jpg";
+import Image5 from "../Assets/WebsiteImages/05.jpg";
 import { Col, Row } from "react-bootstrap";
 
 const HomePage = ({ pageRef, pageNumber }) => {
   const [index, setIndex] = useState(0);
 
-  const images = [Image1, Image2, Image3, Image4];
+  const images = [Image1, Image2, Image3, Image4, Image5];
 
   useEffect(() => {
     const intervalId = setInterval(() => {

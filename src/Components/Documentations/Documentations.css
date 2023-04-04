@@ -22,13 +22,13 @@
 .doc-left-bottom {
   margin-top: 1em;
 }
-.doc-left-bottom::before {
+/* .doc-left-bottom::before {
   content: " ";
   position: absolute;
   width: 7em;
   height: 3px;
   background: rgb(0, 58, 106);
-}
+} */
 .doc-right {
   font-size: 14px;
 }

@@ -30,7 +30,7 @@ const NavbarResponsive = ({ scrollToPage }) => {
               <Nav.Link onClick={() => scrollToPage(2)}>SERVICE</Nav.Link>
               <Nav.Link onClick={() => scrollToPage(3)}>ITINARARY</Nav.Link>
               <Nav.Link onClick={() => scrollToPage(4)}>GALLERY</Nav.Link>
-              <Nav.Link onClick={() => scrollToPage(5)}>FEEDBACK</Nav.Link>
+              <Nav.Link onClick={() => scrollToPage(5)}>TESTIMONIALS</Nav.Link>
               <Nav.Link onClick={() => scrollToPage(6)}>ABOUT</Nav.Link>
               <Nav.Link onClick={() => scrollToPage(7)}>CONTACT</Nav.Link>
               {/* <Nav.Link href="#contact">CONTACT</Nav.Link> */}
