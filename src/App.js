@@ -33,11 +33,11 @@ function App() {
       <HomePage className="banner" pageRef={pageRefs[0]} pageNumber={1} />
       <Navbar scrollToPage={scrollToPage} />
       <Documentations pageRef={pageRefs[1]} pageNumber={2} />
-      <TravelInfoCarousel pageRef={pageRefs[2]} pageNumber={3} />
+      {/* <TravelInfoCarousel pageRef={pageRefs[2]} pageNumber={3} /> */}
       <Itinarary pageRef={pageRefs[3]} pageNumber={4} />
-      <PhotoGallery pageRef={pageRefs[4]} pageNumber={5} />
-      {/* <CenterofExcellence pageRef={pageRefs[5]} pageNumber={6} /> */}
-      <Feedback pageRef={pageRefs[6]} pageNumber={7} />
+      <Feedback pageRef={pageRefs[4]} pageNumber={5} />
+      <CenterofExcellence pageRef={pageRefs[5]} pageNumber={6} />
+      <PhotoGallery pageRef={pageRefs[6]} pageNumber={7} />
       <Info pageRef={pageRefs[7]} pageNumber={8} />
       <Contact pageRef={pageRefs[8]} pageNumber={9} />
     </div>

@@ -27,13 +27,16 @@ const NavbarResponsive = ({ scrollToPage }) => {
                 <FaHome size={25} color="#fff" />
               </Nav.Link>
               <Nav.Link onClick={() => scrollToPage(1)}>INFO</Nav.Link>
-              <Nav.Link onClick={() => scrollToPage(2)}>FACILITIES</Nav.Link>
+              {/* <Nav.Link onClick={() => scrollToPage(2)}>FACILITIES</Nav.Link> */}
               <Nav.Link onClick={() => scrollToPage(3)}>ITINARARY</Nav.Link>
-              <Nav.Link onClick={() => scrollToPage(4)}>GALLERY</Nav.Link>
-              {/* <Nav.Link onClick={() => scrollToPage(5)}>TESTIMONIALS</Nav.Link> */}
-              <Nav.Link onClick={() => scrollToPage(6)}>
+              <Nav.Link onClick={() => scrollToPage(4)}>
+                {" "}
                 ENRICHMENT PROGRAMS
               </Nav.Link>
+              <Nav.Link onClick={() => scrollToPage(5)}>
+                CENTER OF EXCELLENCE
+              </Nav.Link>
+              <Nav.Link onClick={() => scrollToPage(6)}>GALLERY</Nav.Link>
               <Nav.Link onClick={() => scrollToPage(7)}>ABOUT</Nav.Link>
               <Nav.Link onClick={() => scrollToPage(8)}>CONTACT</Nav.Link>
               {/* <Nav.Link href="#contact">CONTACT</Nav.Link> */}

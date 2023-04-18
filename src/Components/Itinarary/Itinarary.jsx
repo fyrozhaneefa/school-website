@@ -2,6 +2,9 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./Itinarary.scss";
 import "./layout.scss";
+import logo from "../Assets/logo/logobvb2.png";
+import bvbthrissur from "../Assets/Images/bvb_kendra.jpg";
+import bvb_bendra_2 from "../Assets/Images/bvb_bendra_2.jpg";
 import { HiMapPin } from "react-icons/hi2";
 // import { IoCart } from "react-icons/io5";
 // import { IoMdRestaurant } from "react-icons/io";
@@ -18,11 +21,11 @@ const Itinarary = ({ pageRef, pageNumber }) => {
         <Row>
           <Col md={12} className="itinarary-header">
             <div className="header-top">
-              TOUR <span>ITINERARY</span>
+              BHARATIYA VIDYA <span>BHAVAN </span>
             </div>
             <div className="header-sep"></div>
             <div className="header-bottom">
-              <span>Highlights Of Your Journey</span>
+              {/* <span>Highlights Of Your Journey</span> */}
             </div>
           </Col>
         </Row>
@@ -35,7 +38,8 @@ const Itinarary = ({ pageRef, pageNumber }) => {
         <div className="car-scroll">
           <div className="car">
             <img
-              src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/car.png"
+              // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/car.png"
+              src={logo}
               alt=""
             />
           </div>
@@ -44,7 +48,8 @@ const Itinarary = ({ pageRef, pageNumber }) => {
           <div className="line"></div>
           <div className="itinarary-left">
             <img
-              src="https://jthemes.com/themes/wp/travelers/wp-content/uploads/2017/01/01-800x400.jpg"
+              // src="https://jthemes.com/themes/wp/travelers/wp-content/uploads/2017/01/01-800x400.jpg"
+              src={bvbthrissur}
               alt=""
             />
           </div>
@@ -57,6 +62,8 @@ const Itinarary = ({ pageRef, pageNumber }) => {
                 <h5 className="card-title">
                   Welcome to Bharatiya Vidya Bhavan, Thrissur, Kendra
                 </h5>
+                <hr className="separator-color" />
+
                 {/* <h6 className="card-subtitle mb-2">Province / Snow Mountain</h6> */}
                 <p className="card-text">
                   All the above titles are synonymous with this great
@@ -75,7 +82,7 @@ const Itinarary = ({ pageRef, pageNumber }) => {
                   universal education. And, thus was born "Bharatiya Vidya
                   Bhavan"
                 </p>
-                <Row>
+                {/* <Row>
                   <Col md={6} className="itinarary-content">
                     <Row>
                       <Col md={2} className="itinarary-icon">
@@ -98,9 +105,9 @@ const Itinarary = ({ pageRef, pageNumber }) => {
                       </Col>
                     </Row>
                   </Col>
-                </Row>
-                <hr className="separator-color" />
-                <Row>
+                </Row> */}
+                {/* <hr className="separator-color" /> */}
+                {/* <Row>
                   <Col md={6} className="itinarary-content">
                     <Row>
                       <Col md={2} className="itinarary-icon">
@@ -123,7 +130,7 @@ const Itinarary = ({ pageRef, pageNumber }) => {
                       </Col>
                     </Row>
                   </Col>
-                </Row>
+                </Row> */}
               </div>
             </div>
           </div>
@@ -132,7 +139,8 @@ const Itinarary = ({ pageRef, pageNumber }) => {
           <div className="line"></div>
           <div className="itinarary-left">
             <img
-              src="https://jthemes.com/themes/wp/travelers/wp-content/uploads/2017/01/02-800x400.jpg"
+              // src="https://jthemes.com/themes/wp/travelers/wp-content/uploads/2017/01/02-800x400.jpg"
+              src={bvb_bendra_2}
               alt=""
             />
           </div>
@@ -142,18 +150,36 @@ const Itinarary = ({ pageRef, pageNumber }) => {
             </div>
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Blue Sky City</h5>
-                <h6 class="card-subtitle mb-2">Province / Blue Sky City</h6>
+                <h5 class="card-title">
+                  CENTRE OF EXCELLENCE-INTERVENTIONS FORDEVELOPING PROGRAMMES
+                </h5>
+                {/* <h6 class="card-subtitle mb-2">Province / Blue Sky City</h6> */}
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  scelerisque, purus sit amet elementum blandit, sem arcu
-                  egestas quam, eget malesuada sem libero eu ante. Duis nec
-                  ultricies enim. Sed cursus volutpat finibus. Morbi at ornare
-                  purus. Vivamus congue suscipit dui nec fringilla. Nam auctor
-                  velit nec nisi molestie, ut maximus libero euismod. Nam dolor
-                  nunc, consequat nec sollicitudin vel, commodo vitae ex.
+                  The only way to live is to grow. And we will grow, when we are
+                  ready to change. The changes happen only if we learn. And
+                  learning happens when we are exposed to the world of
+                  happenings. Bharatiya Vidya Bhavan’s Thrissur Kendra’s schools
+                  have set up a voyage to grow; to reach on centers of
+                  excellence. Bhavan’s family as a dedicated team is on a path
+                  to excellence by focusing the existing expertise and resources
+                  we possess to achieve and sustain the world class preferences
+                  and values. Bharatiya Vidya Bhavan is organizing and
+                  conducting new programs and activities which pave way to
+                  knowledge and management of new skills, values and qualities.
+                  While planning the program for learning and enhancement all
+                  stakeholders – students, parents and teachers – of this
+                  institution. Development of skills, values, positive attitude,
+                  healthy and safe environment physical and mental health and
+                  well being strong bonding with parents, and alumni charitable
+                  activities, preparing students for competitive examinations,
+                  being well used in technology, the awareness campaign,
+                  orientation classes model scholarship examination, etc. are
+                  done on a regular basis. Coaching classes for entrance
+                  examination are arranged during off school hours, but in line
+                  with the school syllabus, etc. are two various aspects we
+                  focus on.
                 </p>
-                <Row>
+                {/* <Row>
                   <Col md={6} className="itinarary-content">
                     <Row>
                       <Col md={2} className="itinarary-icon">
@@ -201,12 +227,12 @@ const Itinarary = ({ pageRef, pageNumber }) => {
                       </Col>
                     </Row>
                   </Col>
-                </Row>
+                </Row> */}
               </div>
             </div>
           </div>
         </div>
-        <div className="content-div">
+        {/* <div className="content-div">
           <div className="line"></div>
           <div className="itinarary-left">
             <img
@@ -439,7 +465,7 @@ const Itinarary = ({ pageRef, pageNumber }) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* <Row>
         <Col className="itinarary-body-left" md={6}>

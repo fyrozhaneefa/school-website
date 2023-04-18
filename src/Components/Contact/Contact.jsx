@@ -10,7 +10,7 @@ const Contact = ({ pageRef, pageNumber }) => {
         <Row>
           <Col md={12} className="contact-header">
             <div className="header-top">
-              Bharatiya Vidya <span>Bhavan</span>
+              BHARATIYA VIDYA <span>BHAVAN </span>
             </div>
             <div className="header-sep"></div>
             <div className="header-bottom">
