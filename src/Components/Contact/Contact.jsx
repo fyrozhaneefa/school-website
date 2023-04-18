@@ -10,16 +10,16 @@ const Contact = ({ pageRef, pageNumber }) => {
         <Row>
           <Col md={12} className="contact-header">
             <div className="header-top">
-              HAVE <span>QUESTIONS?</span>
+              Bharatiya Vidya <span>Bhavan</span>
             </div>
             <div className="header-sep"></div>
             <div className="header-bottom">
-              <span>Words From Our Happy Tourist</span>
+              <span>Thrissur Kendra</span>
             </div>
           </Col>
         </Row>
       </div>
-      <div className="container padding-bottom">
+      {/* <div className="container padding-bottom">
         <Row>
           <Col className="body-left" md={6}>
             <div className="input-wrapper">
@@ -65,7 +65,7 @@ const Contact = ({ pageRef, pageNumber }) => {
             />
           </div>
         </Row>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

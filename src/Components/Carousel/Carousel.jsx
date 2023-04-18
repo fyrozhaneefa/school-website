@@ -28,7 +28,7 @@ const TravelInfoCarousel = ({ pageRef, pageNumber }) => {
         className="carousel"
         activeIndex={index}
         onSelect={handleSelect}
-        slide={false}
+        slide={true}
         fade={true}
       >
         <Carousel.Item className="carousel-container carousel-item">

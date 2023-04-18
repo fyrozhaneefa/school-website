@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 // import Navbar from "../Navbar/Navbar";
 import "./Homepage.css";
-import Image1 from "../Assets/WebsiteImages/01.jpg";
-import Image2 from "../Assets/WebsiteImages/06.jpg";
-import Image3 from "../Assets/WebsiteImages/03.jpg";
-import Image4 from "../Assets/WebsiteImages/04.jpg";
-import Image5 from "../Assets/WebsiteImages/05.jpg";
+import Image1 from "../Assets/WebsiteImages/homepage1.png";
+import Image2 from "../Assets/WebsiteImages/homepage2.png";
+import Image3 from "../Assets/WebsiteImages/homepage3.png";
+// import Image4 from "../Assets/WebsiteImages/04.jpg";
+// import Image5 from "../Assets/WebsiteImages/05.jpg";
 import { Col, Row } from "react-bootstrap";
 
 const HomePage = ({ pageRef, pageNumber }) => {
   const [index, setIndex] = useState(0);
 
-  const images = [Image1, Image2, Image3, Image4, Image5];
+  const images = [Image1, Image2, Image3];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -36,7 +36,7 @@ const HomePage = ({ pageRef, pageNumber }) => {
       <div className="home-page" style={style}>
         <div className="container">
           <div className="inside">
-            <Row>
+            {/* <Row>
               <Col md="6">
                 <div className="date-box">
                   <div className="date-left">
@@ -85,7 +85,7 @@ const HomePage = ({ pageRef, pageNumber }) => {
                   </div>
                 </div>
               </Col>
-            </Row>
+            </Row> */}
           </div>
           {/* <div className="home-page-container">
             <Row>

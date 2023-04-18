@@ -54,16 +54,26 @@ const Itinarary = ({ pageRef, pageNumber }) => {
             </div>
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">Snow Mountain City</h5>
-                <h6 className="card-subtitle mb-2">Province / Snow Mountain</h6>
+                <h5 className="card-title">
+                  Welcome to Bharatiya Vidya Bhavan, Thrissur, Kendra
+                </h5>
+                {/* <h6 className="card-subtitle mb-2">Province / Snow Mountain</h6> */}
                 <p className="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  scelerisque, purus sit amet elementum blandit, sem arcu
-                  egestas quam, eget malesuada sem libero eu ante. Duis nec
-                  ultricies enim. Sed cursus volutpat finibus. Morbi at ornare
-                  purus. Vivamus congue suscipit dui nec fringilla. Nam auctor
-                  velit nec nisi molestie, ut maximus libero euismod. Nam dolor
-                  nunc, consequat nec sollicitudin vel, commodo vitae ex.
+                  All the above titles are synonymous with this great
+                  personality. In the words of Shri. R. Venkataraman, the former
+                  President of India, “In the galaxy of eminent men of India,
+                  Kanhaiyalal Maneklal Munshi is the shining star that still
+                  beckons humanity to the path of duty and dharma.” He had a
+                  sense of rootedness in the region, locale, and culture of
+                  India and never underestimated tradition and continuity.
+                  According to Munshiji, Bharatiya Vidya was based on the
+                  inalienable principles of Satyam, Shivam, and Sundaram-Truth,
+                  Godliness, and Beauty-all of which are the basic tenets of
+                  every religion in the world. He wanted to give a physical form
+                  to these metaphysical concepts and thus germinated the thought
+                  of an institution to promote, propagate and spread this
+                  universal education. And, thus was born "Bharatiya Vidya
+                  Bhavan"
                 </p>
                 <Row>
                   <Col md={6} className="itinarary-content">

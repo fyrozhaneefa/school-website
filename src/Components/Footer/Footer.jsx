@@ -15,13 +15,10 @@ const Footer = () => {
           <Col className="col-md-10">
             <Row>
               {" "}
-              <span>Group Tour © 2017-2022. All Rights Reserved</span>
+              <span>Copyright © 2023. All Rights Reserved</span>
             </Row>
             <Row>
-              <span>
-                {" "}
-                Landing Page Template Designed & Developed By: jThemes Studio
-              </span>
+              <span> Designed & Developed By: Opine infotech pvt.ltd</span>
             </Row>
           </Col>
           <Col className="col-md-2">
