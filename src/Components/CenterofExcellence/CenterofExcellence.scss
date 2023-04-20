@@ -58,4 +58,18 @@
       margin-top: 1rem;
     }
   }
+  .read-more {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .more {
+      color: #ffffff;
+      cursor: pointer;
+      transition: 0.2s;
+      &:hover {
+        transition: 0.2s;
+        color: #b9bece;
+      }
+    }
+  }
 }

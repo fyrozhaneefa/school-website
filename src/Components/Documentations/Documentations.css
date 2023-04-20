@@ -11,19 +11,23 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  align-content: center;
+  /* align-content: center; */
+  flex-direction: column;
 }
 .doc-left .main-header-text {
-  font-size: 4.143em;
+  font-size: 2.5rem;
   font-weight: 900;
   color: #3c4251;
+  font-style: italic;
 }
 .doc-left .sub-header-text {
-  font-size: 2.143em;
+  /* font-size: 2.143em; */
   font-weight: 900;
+  line-height: 26px;
 }
 .doc-left-bottom {
   margin-top: 1em;
+  width: 90%;
 }
 .doc-left-img {
   width: 29rem;
@@ -57,7 +61,8 @@
   /* justify-content: space-around; */
 }
 .doc-right {
-  font-size: 1rempx;
+  font-size: 1rem;
+  font-weight: 500;
 }
 .service {
   display: flex;

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./CenterofExcellence.scss";
 import { Col, Row } from "react-bootstrap";
 
 const CenterofExcellence = ({ pageRef, pageNumber }) => {
+  const [showMore, setShowMore] = useState(false);
   return (
     <div className="contact-container" ref={pageRef} id={`page-${pageNumber}`}>
       <div className="container">
@@ -118,193 +119,211 @@ const CenterofExcellence = ({ pageRef, pageNumber }) => {
               </p>
             </Row>
           </Col>
-          <Col md={4} className="item-container">
-            <div className="item-header">
-              {/* <ImLab /> */}
-              <div className="item-header-right">
-                <span></span>
-                <span>Group IV</span>
-              </div>
+          {showMore ? (
+            <>
+              <Col md={4} className="item-container">
+                <div className="item-header">
+                  {/* <ImLab /> */}
+                  <div className="item-header-right">
+                    <span></span>
+                    <span>Group IV</span>
+                  </div>
+                </div>
+
+                {/* <Row className="carousel-body" style={{ width: "100%" }}>
+      <img
+        // src={lab}
+        // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
+        style={{ width: "100%", height: "200px" }}
+        alt=""
+      />
+    </Row> */}
+                <Row className="carousel-footer">
+                  <h6>Asmita</h6>
+
+                  <p>
+                    The future challenges can be met by building classrooms with
+                    latest technologies and tools by incorporating the emerging
+                    innovative trends and approaches. For this the teachers and
+                    students have to get trained and equipped.The objective of
+                    the group is to raise the standard of the students as per
+                    the current and contemporary need.We have created Bhavan's
+                    e-library to motivate students to read by giving access to
+                    our e-library.
+                  </p>
+                </Row>
+              </Col>
+              <Col md={4} className="item-container">
+                <div className="item-header">
+                  {/* <ImLab /> */}
+                  <div className="item-header-right">
+                    <span></span>
+                    <span>Group V</span>
+                  </div>
+                </div>
+
+                {/* <Row className="carousel-body" style={{ width: "100%" }}>
+      <img
+        // src={lab}
+        // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
+        style={{ width: "100%", height: "200px" }}
+        alt=""
+      />
+    </Row> */}
+                <Row className="carousel-footer">
+                  <h6>Saatwika</h6>
+
+                  <p>
+                    Satwika means Spirited and Energised.Satwika focuses on the
+                    theme of PTA Strengthening It is aimed at creating a Spirit
+                    of Harmony between parents,teachers and the school
+                    Management on the basis of mutual trustand
+                    co-operation.Satwika believes in the positive and effective
+                    participation of parents, ensuring our children to reach
+                    better heights.Through parenting sessions and other
+                    educative programmes,Satwika aims at energising parents to
+                    co-operate and support the school in the effort towards the
+                    multifaceted development of our children.
+                  </p>
+                </Row>
+              </Col>
+              <Col md={4} className="item-container">
+                <div className="item-header">
+                  {/* <ImLab /> */}
+                  <div className="item-header-right">
+                    <span></span>
+                    <span>Group VI</span>
+                  </div>
+                </div>
+
+                {/* <Row className="carousel-body" style={{ width: "100%" }}>
+      <img
+        // src={lab}
+        // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
+        style={{ width: "100%", height: "200px" }}
+        alt=""
+      />
+    </Row> */}
+                <Row className="carousel-footer">
+                  <h6>Dream Team</h6>
+
+                  <p>
+                    Green Campus taken up by our team, Dream Team is a dream
+                    project for replenishing greenery in the school campus. Our
+                    aim is to create a beautiful garden in front of the school a
+                    vegetable garden and an area of medicinal plants. We have
+                    also planned to install a bio-waste plant near the
+                    playground to keep the campus clean and also to use bio
+                    waste as manure for the plants. All these can be realised
+                    only after school reopened and regular classes begin.
+                    Students’ involvement is essential for maintaining the
+                    garden.
+                  </p>
+                </Row>
+              </Col>
+              <Col md={4} className="item-container">
+                <div className="item-header">
+                  {/* <ImLab /> */}
+                  <div className="item-header-right">
+                    <span></span>
+                    <span>Group VII </span>
+                  </div>
+                </div>
+
+                {/* <Row className="carousel-body" style={{ width: "100%" }}>
+      <img
+        // src={lab}
+        // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
+        style={{ width: "100%", height: "200px" }}
+        alt=""
+      />
+    </Row> */}
+                <Row className="carousel-footer">
+                  <h6>Udbodhan</h6>
+
+                  <p>
+                    Udbodhan means awakening or enlightening. The out reach
+                    programmes planned are consolidated under the title
+                    Arpitam-Character Moulding Through Charity. As the title
+                    suggests each activity under this program aims at character
+                    moulding through charitable activities ranging from monetary
+                    help to visits and surveys.Students need to realise that
+                    Charity isn't about pity but that it is about love.
+                  </p>
+                </Row>
+              </Col>
+              <Col md={4} className="item-container">
+                <div className="item-header">
+                  {/* <ImLab /> */}
+                  <div className="item-header-right">
+                    <span></span>
+                    <span>Group VIII </span>
+                  </div>
+                </div>
+
+                {/* <Row className="carousel-body" style={{ width: "100%" }}>
+      <img
+        // src={lab}
+        // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
+        style={{ width: "100%", height: "200px" }}
+        alt=""
+      />
+    </Row> */}
+                <Row className="carousel-footer">
+                  <h6>Spectrum</h6>
+
+                  <p>
+                    The title of our group is Spectrum and the group focuses on
+                    the conduct of skill based activities. Skill based learning
+                    helps the children in enhancing their strengths and learning
+                    important skills to achieve their vocational goals. Just as
+                    the title denotes,children produce a gamut of their talents
+                    by attending to various skill related workshops and
+                    activities.
+                  </p>
+                </Row>
+              </Col>
+              <Col md={4} className="item-container">
+                <div className="item-header">
+                  {/* <ImLab /> */}
+                  <div className="item-header-right">
+                    <span></span>
+                    <span>Group IX </span>
+                  </div>
+                </div>
+
+                {/* <Row className="carousel-body" style={{ width: "100%" }}>
+      <img
+        // src={lab}
+        // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
+        style={{ width: "100%", height: "200px" }}
+        alt=""
+      />
+    </Row> */}
+                <Row className="carousel-footer">
+                  <h6>Zenith</h6>
+
+                  <p>
+                    The title of our group is Spectrum and the group focuses on
+                    the conduct of skill based activities. Skill based learning
+                    helps the children in enhancing their strengths and learning
+                    important skills to achieve their vocational goals. Just as
+                    the title denotes,children produce a gamut of their talents
+                    by attending to various skill related workshops and
+                    activities.
+                  </p>
+                </Row>
+              </Col>
+            </>
+          ) : (
+            ""
+          )}
+        </Row>
+        <Row>
+          <Col md={12}>
+            <div className="read-more" onClick={() => setShowMore(!showMore)}>
+              <div className="more">Show {showMore ? "less" : "more..."}</div>
             </div>
-
-            {/* <Row className="carousel-body" style={{ width: "100%" }}>
-              <img
-                // src={lab}
-                // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
-                style={{ width: "100%", height: "200px" }}
-                alt=""
-              />
-            </Row> */}
-            <Row className="carousel-footer">
-              <h6>Asmita</h6>
-
-              <p>
-                The future challenges can be met by building classrooms with
-                latest technologies and tools by incorporating the emerging
-                innovative trends and approaches. For this the teachers and
-                students have to get trained and equipped.The objective of the
-                group is to raise the standard of the students as per the
-                current and contemporary need.We have created Bhavan's e-library
-                to motivate students to read by giving access to our e-library.
-              </p>
-            </Row>
-          </Col>
-          <Col md={4} className="item-container">
-            <div className="item-header">
-              {/* <ImLab /> */}
-              <div className="item-header-right">
-                <span></span>
-                <span>Group V</span>
-              </div>
-            </div>
-
-            {/* <Row className="carousel-body" style={{ width: "100%" }}>
-              <img
-                // src={lab}
-                // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
-                style={{ width: "100%", height: "200px" }}
-                alt=""
-              />
-            </Row> */}
-            <Row className="carousel-footer">
-              <h6>Saatwika</h6>
-
-              <p>
-                Satwika means Spirited and Energised.Satwika focuses on the
-                theme of PTA Strengthening It is aimed at creating a Spirit of
-                Harmony between parents,teachers and the school Management on
-                the basis of mutual trustand co-operation.Satwika believes in
-                the positive and effective participation of parents, ensuring
-                our children to reach better heights.Through parenting sessions
-                and other educative programmes,Satwika aims at energising
-                parents to co-operate and support the school in the effort
-                towards the multifaceted development of our children.
-              </p>
-            </Row>
-          </Col>
-          <Col md={4} className="item-container">
-            <div className="item-header">
-              {/* <ImLab /> */}
-              <div className="item-header-right">
-                <span></span>
-                <span>Group VI</span>
-              </div>
-            </div>
-
-            {/* <Row className="carousel-body" style={{ width: "100%" }}>
-              <img
-                // src={lab}
-                // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
-                style={{ width: "100%", height: "200px" }}
-                alt=""
-              />
-            </Row> */}
-            <Row className="carousel-footer">
-              <h6>Dream Team</h6>
-
-              <p>
-                Green Campus taken up by our team, Dream Team is a dream project
-                for replenishing greenery in the school campus. Our aim is to
-                create a beautiful garden in front of the school a vegetable
-                garden and an area of medicinal plants. We have also planned to
-                install a bio-waste plant near the playground to keep the campus
-                clean and also to use bio waste as manure for the plants. All
-                these can be realised only after school reopened and regular
-                classes begin. Students’ involvement is essential for
-                maintaining the garden.
-              </p>
-            </Row>
-          </Col>
-          <Col md={4} className="item-container">
-            <div className="item-header">
-              {/* <ImLab /> */}
-              <div className="item-header-right">
-                <span></span>
-                <span>Group VII </span>
-              </div>
-            </div>
-
-            {/* <Row className="carousel-body" style={{ width: "100%" }}>
-              <img
-                // src={lab}
-                // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
-                style={{ width: "100%", height: "200px" }}
-                alt=""
-              />
-            </Row> */}
-            <Row className="carousel-footer">
-              <h6>Udbodhan</h6>
-
-              <p>
-                Udbodhan means awakening or enlightening. The out reach
-                programmes planned are consolidated under the title
-                Arpitam-Character Moulding Through Charity. As the title
-                suggests each activity under this program aims at character
-                moulding through charitable activities ranging from monetary
-                help to visits and surveys.Students need to realise that Charity
-                isn't about pity but that it is about love.
-              </p>
-            </Row>
-          </Col>
-          <Col md={4} className="item-container">
-            <div className="item-header">
-              {/* <ImLab /> */}
-              <div className="item-header-right">
-                <span></span>
-                <span>Group VIII </span>
-              </div>
-            </div>
-
-            {/* <Row className="carousel-body" style={{ width: "100%" }}>
-              <img
-                // src={lab}
-                // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
-                style={{ width: "100%", height: "200px" }}
-                alt=""
-              />
-            </Row> */}
-            <Row className="carousel-footer">
-              <h6>Spectrum</h6>
-
-              <p>
-                The title of our group is Spectrum and the group focuses on the
-                conduct of skill based activities. Skill based learning helps
-                the children in enhancing their strengths and learning important
-                skills to achieve their vocational goals. Just as the title
-                denotes,children produce a gamut of their talents by attending
-                to various skill related workshops and activities.
-              </p>
-            </Row>
-          </Col>
-          <Col md={4} className="item-container">
-            <div className="item-header">
-              {/* <ImLab /> */}
-              <div className="item-header-right">
-                <span></span>
-                <span>Group IX </span>
-              </div>
-            </div>
-
-            {/* <Row className="carousel-body" style={{ width: "100%" }}>
-              <img
-                // src={lab}
-                // src="https://jthemes.com/themes/wp/travelers/wp-content/themes/travellers/images/restaurant.jpg"
-                style={{ width: "100%", height: "200px" }}
-                alt=""
-              />
-            </Row> */}
-            <Row className="carousel-footer">
-              <h6>Zenith</h6>
-
-              <p>
-                The title of our group is Spectrum and the group focuses on the
-                conduct of skill based activities. Skill based learning helps
-                the children in enhancing their strengths and learning important
-                skills to achieve their vocational goals. Just as the title
-                denotes,children produce a gamut of their talents by attending
-                to various skill related workshops and activities.
-              </p>
-            </Row>
           </Col>
         </Row>
       </div>
