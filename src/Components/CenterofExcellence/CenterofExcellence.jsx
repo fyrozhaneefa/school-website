@@ -9,7 +9,7 @@ const CenterofExcellence = ({ pageRef, pageNumber }) => {
         <Row>
           <Col md={12} className="contact-header">
             <div className="header-top">
-              CENTER OF <span>EXCELLENCE</span>
+              CENTRE OF <span>EXCELLENCE</span>
             </div>
             <div className="header-sep"></div>
             <div className="header-bottom">

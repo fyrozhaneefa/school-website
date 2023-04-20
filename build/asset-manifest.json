@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bvbthrissur/static/css/main.9c90212f.css",
-    "main.js": "/bvbthrissur/static/js/main.a5b5fef1.js",
+    "main.css": "/bvbthrissur/static/css/main.7cce3255.css",
+    "main.js": "/bvbthrissur/static/js/main.d839f46e.js",
     "static/js/787.b5df1556.chunk.js": "/bvbthrissur/static/js/787.b5df1556.chunk.js",
     "static/media/fitness.jpg": "/bvbthrissur/static/media/fitness.6ef9c98f32f17d1ff3ac.jpg",
     "static/media/library.jpg": "/bvbthrissur/static/media/library.911e6ba180f93ba5a794.jpg",
@@ -50,12 +50,12 @@
     "static/media/logo.png": "/bvbthrissur/static/media/logo.cb6e0a8a767ce7119da1.png",
     "static/media/001.jpg": "/bvbthrissur/static/media/001.7514ea324dd8240811ad.jpg",
     "index.html": "/bvbthrissur/index.html",
-    "main.9c90212f.css.map": "/bvbthrissur/static/css/main.9c90212f.css.map",
-    "main.a5b5fef1.js.map": "/bvbthrissur/static/js/main.a5b5fef1.js.map",
+    "main.7cce3255.css.map": "/bvbthrissur/static/css/main.7cce3255.css.map",
+    "main.d839f46e.js.map": "/bvbthrissur/static/js/main.d839f46e.js.map",
     "787.b5df1556.chunk.js.map": "/bvbthrissur/static/js/787.b5df1556.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c90212f.css",
-    "static/js/main.a5b5fef1.js"
+    "static/css/main.7cce3255.css",
+    "static/js/main.d839f46e.js"
   ]
 }

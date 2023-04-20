@@ -7,8 +7,11 @@
   display: table;
 }
 .doc-left {
-  display: table;
+  display: flex;
   position: relative;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 .doc-left .main-header-text {
   font-size: 4.143em;
@@ -23,8 +26,8 @@
   margin-top: 1em;
 }
 .doc-left-img {
-  width: 35rem;
-  height: 38rem;
+  width: 29rem;
+  height: 34rem;
 }
 .doc-left-img img {
   width: 100%;

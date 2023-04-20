@@ -34,7 +34,7 @@ const NavbarResponsive = ({ scrollToPage }) => {
                 ENRICHMENT PROGRAMS
               </Nav.Link>
               <Nav.Link onClick={() => scrollToPage(5)}>
-                CENTER OF EXCELLENCE
+                CENTRE OF EXCELLENCE
               </Nav.Link>
               <Nav.Link onClick={() => scrollToPage(6)}>GALLERY</Nav.Link>
               <Nav.Link onClick={() => scrollToPage(7)}>ABOUT</Nav.Link>

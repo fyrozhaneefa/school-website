@@ -32,8 +32,8 @@ const Itinarary = ({ pageRef, pageNumber }) => {
       </div>
       <div className="itinarary-main">
         <div className="tube">
-          <span className="tube-top">start</span>
-          <span className="tube-end">end</span>
+          <span className="tube-top"></span>
+          <span className="tube-end"></span>
         </div>
         <div className="car-scroll">
           <div className="car">
@@ -54,9 +54,9 @@ const Itinarary = ({ pageRef, pageNumber }) => {
             />
           </div>
           <div className="itinarary-right">
-            <div className="day-container">
+            {/* <div className="day-container">
               <span>Day 1</span>
-            </div>
+            </div> */}
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">
@@ -145,9 +145,9 @@ const Itinarary = ({ pageRef, pageNumber }) => {
             />
           </div>
           <div className="itinarary-right">
-            <div className="day-reverse">
+            {/* <div className="day-reverse">
               <span>Day 2</span>
-            </div>
+            </div> */}
             <div class="card">
               <div class="card-body">
                 <h5 class="card-title">
@@ -155,29 +155,22 @@ const Itinarary = ({ pageRef, pageNumber }) => {
                 </h5>
                 {/* <h6 class="card-subtitle mb-2">Province / Blue Sky City</h6> */}
                 <p class="card-text">
-                  The only way to live is to grow. And we will grow, when we are
-                  ready to change. The changes happen only if we learn. And
-                  learning happens when we are exposed to the world of
-                  happenings. Bharatiya Vidya Bhavan’s Thrissur Kendra’s schools
-                  have set up a voyage to grow; to reach on centers of
-                  excellence. Bhavan’s family as a dedicated team is on a path
-                  to excellence by focusing the existing expertise and resources
-                  we possess to achieve and sustain the world class preferences
-                  and values. Bharatiya Vidya Bhavan is organizing and
-                  conducting new programs and activities which pave way to
-                  knowledge and management of new skills, values and qualities.
-                  While planning the program for learning and enhancement all
-                  stakeholders – students, parents and teachers – of this
-                  institution. Development of skills, values, positive attitude,
-                  healthy and safe environment physical and mental health and
-                  well being strong bonding with parents, and alumni charitable
-                  activities, preparing students for competitive examinations,
-                  being well used in technology, the awareness campaign,
-                  orientation classes model scholarship examination, etc. are
-                  done on a regular basis. Coaching classes for entrance
-                  examination are arranged during off school hours, but in line
-                  with the school syllabus, etc. are two various aspects we
-                  focus on.
+                  Bharatiya Vidya Bhavan,Poochatty has been on a consistent and
+                  exciting path of renewal and can boast some quality
+                  achievements. BVM, Poochatty is a school that values
+                  tradition, as well as embracing what is new, contemporary and
+                  innovative, to support and enhance our student's journey into
+                  the future. Tangibly, this can be seen in our re-branding
+                  programs. We entered the 42nd year of our glorious academic
+                  journey in June 2018 from the humble beginning we made in
+                  1979, having crossed many memorable milestones, today our
+                  school is a dream destination for students ,teachers and
+                  parents alike. We are committed to the intellectual, creative,
+                  physical and social growth of our students and we respect them
+                  as individuals with different histories, needs, interests,
+                  abilities and aptitudes. Our students are friendly, confident
+                  and successful and we invite you to share our pride in their
+                  achievements.
                 </p>
                 {/* <Row>
                   <Col md={6} className="itinarary-content">
