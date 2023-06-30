@@ -148,11 +148,16 @@ const Itinarary = ({ pageRef, pageNumber }) => {
             {/* <div className="day-reverse">
               <span>Day 2</span>
             </div> */}
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">BHARATIYA VIDYA BHAVAN, POOCHATTY</h5>
-                {/* <h6 class="card-subtitle mb-2">Province / Blue Sky City</h6> */}
-                <p class="card-text">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">
+                  <a href="http://bvbpoochatty.in/">
+                    BHARATIYA VIDYA BHAVAN, POOCHATTY
+                  </a>
+                </h5>
+
+                {/* <h6 className="card-subtitle mb-2">Province / Blue Sky City</h6> */}
+                <p className="card-text">
                   Bharatiya Vidya Bhavan,Poochatty has been on a consistent and
                   exciting path of renewal and can boast some quality
                   achievements. BVM, Poochatty is a school that values
@@ -232,13 +237,15 @@ const Itinarary = ({ pageRef, pageNumber }) => {
             {/* <div className="day-container">
               <span>Day 3</span>
             </div> */}
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">
-                  KULAPATI MUNSHI BHAVAN’S VIDYA MANDIR POTTORE
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">
+                  <a href="https://www.bvbpottore.com/">
+                    KULAPATI MUNSHI BHAVAN’S VIDYA MANDIR POTTORE
+                  </a>
                 </h5>
-                {/* <h6 class="card-subtitle mb-2">Province / Lake City</h6> */}
-                <p class="card-text">
+                {/* <h6 className="card-subtitle mb-2">Province / Lake City</h6> */}
+                <p className="card-text">
                   Bharatiya Vidya Bhavan's Vidya Mandir at Pottore is a
                   co-educational school affiliated with the Central Board of
                   Secondary Education (CBSE), New Delhi. The school offers
@@ -323,11 +330,11 @@ const Itinarary = ({ pageRef, pageNumber }) => {
             <div className="day-reverse">
               <span>Day 4</span>
             </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Penguin Beach</h5>
-                <h6 class="card-subtitle mb-2">Province / Penguin Beach</h6>
-                <p class="card-text">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Penguin Beach</h5>
+                <h6 className="card-subtitle mb-2">Province / Penguin Beach</h6>
+                <p className="card-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   scelerisque, purus sit amet elementum blandit, sem arcu
                   egestas quam, eget malesuada sem libero eu ante. Duis nec
@@ -401,11 +408,11 @@ const Itinarary = ({ pageRef, pageNumber }) => {
             <div className="day-container">
               <span>Day 3</span>
             </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Lake City</h5>
-                <h6 class="card-subtitle mb-2">Province / Lake City</h6>
-                <p class="card-text">
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Lake City</h5>
+                <h6 className="card-subtitle mb-2">Province / Lake City</h6>
+                <p className="card-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   scelerisque, purus sit amet elementum blandit, sem arcu
                   egestas quam, eget malesuada sem libero eu ante. Duis nec
@@ -471,15 +478,15 @@ const Itinarary = ({ pageRef, pageNumber }) => {
       {/* <Row>
         <Col className="itinarary-body-left" md={6}>
           <div
-            class="card"
+            className="card"
             // style={{ width: "18rem" }}
             >
-            <div class="card-body">
-              <h5 class="card-title">Snow Mountain City</h5>
-              <h6 class="card-subtitle mb-2 text-muted">
+            <div className="card-body">
+              <h5 className="card-title">Snow Mountain City</h5>
+              <h6 className="card-subtitle mb-2 text-muted">
                 Province / Snow Mountain
               </h6>
-              <p class="card-text">
+              <p className="card-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 scelerisque, purus sit amet elementum blandit, sem arcu egestas
                 quam, eget malesuada sem libero eu ante. Duis nec ultricies
@@ -533,15 +540,15 @@ const Itinarary = ({ pageRef, pageNumber }) => {
         </Col>
         <Col className="itinarary-body-right" md={6}>
           <div
-            class="card"
+            className="card"
             // style={{ width: "18rem" }}
           >
-            <div class="card-body">
-              <h5 class="card-title">Snow Mountain City</h5>
-              <h6 class="card-subtitle mb-2 text-muted">
+            <div className="card-body">
+              <h5 className="card-title">Snow Mountain City</h5>
+              <h6 className="card-subtitle mb-2 text-muted">
                 Province / Snow Mountain
               </h6>
-              <p class="card-text">
+              <p className="card-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 scelerisque, purus sit amet elementum blandit, sem arcu egestas
                 quam, eget malesuada sem libero eu ante. Duis nec ultricies

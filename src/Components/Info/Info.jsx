@@ -147,7 +147,7 @@ const Info = ({ pageRef, pageNumber }) => {
                 <BsFillTelephoneFill color="white" size={30} />
               </div>
               <div className="icon-text-div">
-                <span>(+91) 93887 80503</span>
+                {/* <span>(+91) 93887 80503</span> */}
                 <span>(+91) 93887 80522</span>
               </div>
             </div>

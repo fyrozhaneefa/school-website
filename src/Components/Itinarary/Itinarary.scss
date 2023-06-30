@@ -9,7 +9,7 @@
   align-items: center;
   text-align: center;
   gap: 1em;
-  margin-bottom: 7em;
+  margin-bottom: 1em;
 }
 // .itinarary-header .header-bottom::before {
 //   content: " ";
@@ -206,6 +206,15 @@
           .card-title {
             font-size: 2rem;
             color: #575757;
+            z-index: 4;
+            &:hover {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+            a {
+              color: #575757;
+              text-decoration: none;
+            }
           }
           .card-subtitle {
             font-size: 0.95rem;

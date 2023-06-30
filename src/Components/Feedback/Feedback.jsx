@@ -12,12 +12,13 @@ import Ramkumar from "../Assets/Centerofexcellence/005.jpg";
 import Sethumadhavan from "../Assets/Centerofexcellence/006.jpg";
 import Sreekumar from "../Assets/Centerofexcellence/007.jpg";
 import Shreekumar from "../Assets/Centerofexcellence/008.jpg";
-import Divya from "../Assets/Centerofexcellence/019.jpg";
-import Lajish from "../Assets/Centerofexcellence/010.jpg";
-import Ravichandra from "../Assets/Centerofexcellence/011.jpg";
-import Madhavi from "../Assets/Centerofexcellence/012.jpg";
-import Riju from "../Assets/Centerofexcellence/013.jpg";
-import Suresh from "../Assets/Centerofexcellence/014.jpg";
+import Sunil from "../Assets/Centerofexcellence/009.jpg";
+import Divya from "../Assets/Centerofexcellence/010.jpg";
+import Lajish from "../Assets/Centerofexcellence/011.jpg";
+import Ravichandra from "../Assets/Centerofexcellence/012.jpg";
+import Madhavi from "../Assets/Centerofexcellence/013.jpg";
+import Riju from "../Assets/Centerofexcellence/014.jpg";
+import Suresh from "../Assets/Centerofexcellence/015.jpg";
 // import secretary from "../Assets/ImportantPersons/rkrishnan5.png";
 // import principal from "../Assets/ImportantPersons/principal.jpg";
 
@@ -69,13 +70,9 @@ const Feedback = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-footer">
                   <div className="carousel-footer-container">
-                    {/* <div className="carousel-footer-icon">
-                      <img
-                        src={MAANEY}
-                        
-                        alt=""
-                      />
-                    </div> */}
+                    <div className="carousel-footer-icon">
+                      <img src={MAANEY} alt="" />
+                    </div>
                     <div className="carousel-footer-text">
                       <h4>DR.MAANEY PAUL</h4>
                       <span></span>
@@ -106,13 +103,9 @@ const Feedback = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-footer">
                   <div className="carousel-footer-container">
-                    {/* <div className="carousel-footer-icon">
-                      <img
-                        src={Sapna}
-                        
-                        alt=""
-                      />
-                    </div> */}
+                    <div className="carousel-footer-icon">
+                      <img src={Sapna} alt="" />
+                    </div>
                     <div className="carousel-footer-text">
                       <h4>Mrs.Sapna Sankla</h4>
                       <span></span>
@@ -136,13 +129,9 @@ const Feedback = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-footer">
                   <div className="carousel-footer-container">
-                    {/* <div className="carousel-footer-icon">
-                      <img
-                        src={Suresan}
-                        
-                        alt=""
-                      />
-                    </div> */}
+                    <div className="carousel-footer-icon">
+                      <img src={Suresan} alt="" />
+                    </div>
                     <div className="carousel-footer-text">
                       <h4>A. Suresan</h4>
                       <span></span>
@@ -170,13 +159,9 @@ const Feedback = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-footer">
                   <div className="carousel-footer-container">
-                    {/* <div className="carousel-footer-icon">
-                      <img
-                        src={Nair}
-                        
-                        alt=""
-                      />
-                    </div> */}
+                    <div className="carousel-footer-icon">
+                      <img src={Nair} alt="" />
+                    </div>
                     <div className="carousel-footer-text">
                       <h4>Prof (Dr) MKC Nair</h4>
                       <span></span>
@@ -200,13 +185,13 @@ const Feedback = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-footer">
                   <div className="carousel-footer-container">
-                    {/* <div className="carousel-footer-icon">
+                    <div className="carousel-footer-icon">
                       <img
                         // src={Jino}
-                        
+
                         alt=""
                       />
-                    </div> */}
+                    </div>
                     <div className="carousel-footer-text">
                       <h4>Mr.Jino TD</h4>
                       <span></span>
@@ -234,13 +219,9 @@ const Feedback = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-footer">
                   <div className="carousel-footer-container">
-                    {/* <div className="carousel-footer-icon">
-                      <img
-                        src={Ramkumar}
-                        
-                        alt=""
-                      />
-                    </div> */}
+                    <div className="carousel-footer-icon">
+                      <img src={Ramkumar} alt="" />
+                    </div>
                     <div className="carousel-footer-text">
                       <h4>Professor ( Dr) S. Ramkumar</h4>
                       <span></span>
@@ -267,13 +248,9 @@ const Feedback = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-footer">
                   <div className="carousel-footer-container">
-                    {/* <div className="carousel-footer-icon">
-                      <img
-                        src={Sethumadhavan}
-                        
-                        alt=""
-                      />
-                    </div> */}
+                    <div className="carousel-footer-icon">
+                      <img src={Sethumadhavan} alt="" />
+                    </div>
                     <div className="carousel-footer-text">
                       <h4>Dr TP Sethumadhavan</h4>
                       <span></span>
@@ -300,13 +277,9 @@ const Feedback = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-footer">
                   <div className="carousel-footer-container">
-                    {/* <div className="carousel-footer-icon">
-                      <img
-                        src={Sreekumar}
-                        
-                        alt=""
-                      />
-                    </div> */}
+                    <div className="carousel-footer-icon">
+                      <img src={Sreekumar} alt="" />
+                    </div>
                     <div className="carousel-footer-text">
                       <h4>Dr KP Sreekumar</h4>
                       <span></span>
@@ -336,15 +309,41 @@ const Feedback = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-footer">
                   <div className="carousel-footer-container">
-                    {/* <div className="carousel-footer-icon">
-                      <img
-                        src={Shreekumar}
-                        
-                        alt=""
-                      />
-                    </div> */}
+                    <div className="carousel-footer-icon">
+                      <img src={Shreekumar} alt="" />
+                    </div>
                     <div className="carousel-footer-text">
                       <h4>Dr G Shreekumar-Menon</h4>
+                      <span></span>
+                    </div>
+                  </div>
+                </Row>
+              </Col>
+            </Row>
+          </Carousel.Item>
+          <Carousel.Item className="carousel-container">
+            <Row>
+              <Col md={12}>
+                <Row className="carousel-Header">
+                  <Col md={12} className="carousel-Header-text">
+                    <h4>JAGARAN 2020</h4>
+                  </Col>
+                </Row>
+                <Row className="carousel-body">
+                  <span>
+                    Professor & Head, Meat Technology Unit & Founder Director
+                    Academic Staff College KVASU (Kerala Veterinary and Animal
+                    Sciences University).
+                  </span>{" "}
+                  <p>Developing Excellence.</p>
+                </Row>
+                <Row className="carousel-footer">
+                  <div className="carousel-footer-container">
+                    <div className="carousel-footer-icon">
+                      <img src={Sunil} alt="" />
+                    </div>
+                    <div className="carousel-footer-text">
+                      <h4>Dr B Sunil. PhD. FNAVS</h4>
                       <span></span>
                     </div>
                   </div>
@@ -366,13 +365,9 @@ const Feedback = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-footer">
                   <div className="carousel-footer-container">
-                    {/* <div className="carousel-footer-icon">
-                      <img
-                        src={Divya}
-                        
-                        alt=""
-                      />
-                    </div> */}
+                    <div className="carousel-footer-icon">
+                      <img src={Divya} alt="" />
+                    </div>
                     <div className="carousel-footer-text">
                       <h4>Mrs Divya Seles</h4>
                       <span></span>
@@ -399,13 +394,9 @@ const Feedback = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-footer">
                   <div className="carousel-footer-container">
-                    {/* <div className="carousel-footer-icon">
-                      <img
-                        src={Lajish}
-                        
-                        alt=""
-                      />
-                    </div> */}
+                    <div className="carousel-footer-icon">
+                      <img src={Lajish} alt="" />
+                    </div>
                     <div className="carousel-footer-text">
                       <h4>Dr Lajish V L</h4>
                       <span></span>
@@ -432,13 +423,9 @@ const Feedback = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-footer">
                   <div className="carousel-footer-container">
-                    {/* <div className="carousel-footer-icon">
-                      <img
-                        src={Ravichandra}
-                        
-                        alt=""
-                      />
-                    </div> */}
+                    <div className="carousel-footer-icon">
+                      <img src={Ravichandra} alt="" />
+                    </div>
                     <div className="carousel-footer-text">
                       <h4>Dr Ravichandra Karkal</h4>
                       <span></span>
@@ -465,13 +452,9 @@ const Feedback = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-footer">
                   <div className="carousel-footer-container">
-                    {/* <div className="carousel-footer-icon">
-                      <img
-                        src={Madhavi}
-                        
-                        alt=""
-                      />
-                    </div> */}
+                    <div className="carousel-footer-icon">
+                      <img src={Madhavi} alt="" />
+                    </div>
                     <div className="carousel-footer-text">
                       <h4>Dr Madhavi Bhargava. MD</h4>
                       <span></span>
@@ -495,13 +478,9 @@ const Feedback = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-footer">
                   <div className="carousel-footer-container">
-                    {/* <div className="carousel-footer-icon">
-                      <img
-                        src={Riju}
-                        
-                        alt=""
-                      />
-                    </div> */}
+                    <div className="carousel-footer-icon">
+                      <img src={Riju} alt="" />
+                    </div>
                     <div className="carousel-footer-text">
                       <h4>Mr Riju Shankar</h4>
                       <span></span>
@@ -528,13 +507,9 @@ const Feedback = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-footer">
                   <div className="carousel-footer-container">
-                    {/* <div className="carousel-footer-icon">
-                      <img
-                        src={Suresh}
-                        
-                        alt=""
-                      />
-                    </div> */}
+                    <div className="carousel-footer-icon">
+                      <img src={Suresh} alt="" />
+                    </div>
                     <div className="carousel-footer-text">
                       <h4>P Suresh Kumar</h4>
                       <span></span>

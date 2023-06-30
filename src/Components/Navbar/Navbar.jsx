@@ -28,17 +28,23 @@ const NavbarResponsive = ({ scrollToPage }) => {
               </Nav.Link>
               <Nav.Link onClick={() => scrollToPage(1)}>INFO</Nav.Link>
               {/* <Nav.Link onClick={() => scrollToPage(2)}>FACILITIES</Nav.Link> */}
-              <Nav.Link onClick={() => scrollToPage(3)}>ITINARARY</Nav.Link>
-              <Nav.Link onClick={() => scrollToPage(4)}>
+              <Nav.Link onClick={() => scrollToPage(2)}>ITINARARY</Nav.Link>
+              <Nav.Link
+                onClick={() => scrollToPage(3)}
+                style={{ whiteSpace: "nowrap" }}
+              >
                 {" "}
                 ENRICHMENT PROGRAMS
               </Nav.Link>
-              <Nav.Link onClick={() => scrollToPage(5)}>
+              <Nav.Link
+                onClick={() => scrollToPage(4)}
+                style={{ whiteSpace: "nowrap" }}
+              >
                 CENTRE OF EXCELLENCE
               </Nav.Link>
-              <Nav.Link onClick={() => scrollToPage(6)}>GALLERY</Nav.Link>
-              <Nav.Link onClick={() => scrollToPage(7)}>ABOUT</Nav.Link>
-              <Nav.Link onClick={() => scrollToPage(8)}>CONTACT</Nav.Link>
+              <Nav.Link onClick={() => scrollToPage(5)}>GALLERY</Nav.Link>
+              <Nav.Link onClick={() => scrollToPage(6)}>ABOUT</Nav.Link>
+              <Nav.Link onClick={() => scrollToPage(7)}>CONTACT</Nav.Link>
               {/* <Nav.Link href="#contact">CONTACT</Nav.Link> */}
             </Nav>
           </Navbar.Collapse>

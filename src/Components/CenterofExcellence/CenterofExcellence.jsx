@@ -26,8 +26,8 @@ const CenterofExcellence = ({ pageRef, pageNumber }) => {
         </Row>
       </div>
       <div className="coe-container container">
-        <Row>
-          <Col md={4} className="item-container">
+        <Row style={{ justifyContent: "center" }}>
+          <Col md={3} className="item-container">
             <div className="item-header">
               {/* <IoLibrary /> */}
               <div className="item-header-right">
@@ -54,7 +54,7 @@ const CenterofExcellence = ({ pageRef, pageNumber }) => {
               </p>
             </Row>
           </Col>{" "}
-          <Col md={4} className="item-container">
+          <Col md={3} className="item-container">
             <div className="item-header">
               {/* <RiComputerFill /> */}
               <div className="item-header-right">
@@ -86,7 +86,7 @@ const CenterofExcellence = ({ pageRef, pageNumber }) => {
               </p>
             </Row>
           </Col>
-          <Col md={4} className="item-container">
+          <Col md={3} className="item-container">
             <div className="item-header">
               {/* <ImLab /> */}
               <div className="item-header-right">
@@ -121,7 +121,7 @@ const CenterofExcellence = ({ pageRef, pageNumber }) => {
           </Col>
           {showMore ? (
             <>
-              <Col md={4} className="item-container">
+              <Col md={3} className="item-container">
                 <div className="item-header">
                   {/* <ImLab /> */}
                   <div className="item-header-right">
@@ -153,7 +153,7 @@ const CenterofExcellence = ({ pageRef, pageNumber }) => {
                   </p>
                 </Row>
               </Col>
-              <Col md={4} className="item-container">
+              <Col md={3} className="item-container">
                 <div className="item-header">
                   {/* <ImLab /> */}
                   <div className="item-header-right">
@@ -187,7 +187,7 @@ const CenterofExcellence = ({ pageRef, pageNumber }) => {
                   </p>
                 </Row>
               </Col>
-              <Col md={4} className="item-container">
+              <Col md={3} className="item-container">
                 <div className="item-header">
                   {/* <ImLab /> */}
                   <div className="item-header-right">
@@ -221,7 +221,7 @@ const CenterofExcellence = ({ pageRef, pageNumber }) => {
                   </p>
                 </Row>
               </Col>
-              <Col md={4} className="item-container">
+              <Col md={3} className="item-container">
                 <div className="item-header">
                   {/* <ImLab /> */}
                   <div className="item-header-right">
@@ -252,7 +252,7 @@ const CenterofExcellence = ({ pageRef, pageNumber }) => {
                   </p>
                 </Row>
               </Col>
-              <Col md={4} className="item-container">
+              <Col md={3} className="item-container">
                 <div className="item-header">
                   {/* <ImLab /> */}
                   <div className="item-header-right">
@@ -283,7 +283,7 @@ const CenterofExcellence = ({ pageRef, pageNumber }) => {
                   </p>
                 </Row>
               </Col>
-              <Col md={4} className="item-container">
+              <Col md={3} className="item-container">
                 <div className="item-header">
                   {/* <ImLab /> */}
                   <div className="item-header-right">
