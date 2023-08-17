@@ -1,0 +1,57 @@
+.navbar-main {
+  box-shadow: 0 0 3px 1px rgb(0 0 0 / 15%);
+  background-color: #003a6a;
+  color: white;
+}
+.navbar-item-container {
+  gap: 0.75em;
+}
+
+.navbar-item-container a {
+  color: white;
+}
+.teacherModal {
+  font-weight: 500;
+  .modal-description {
+    background-color: #eaeaf4;
+  }
+  // .modal-title-wraper {
+  //   width: 100vw;
+  //   display: flex;
+  //   justify-content: center;
+  .modal-title {
+    background-color: #003a6a;
+    color: #ffffff;
+  }
+  // }
+  .modal-body {
+    .modal-row {
+      margin-bottom: 3em;
+      h5 {
+        background-color: #003a6a;
+        color: #ffffff;
+      }
+    }
+    .modal-row-bottom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
+.dropdown {
+  position: relative;
+  .dd-items {
+    color: black;
+    &:hover {
+      color: rgb(144, 149, 149);
+      background-color: #efefef;
+    }
+  }
+}
+@media only screen and (max-width: 1400) {
+  .navbar-item-container {
+    font-size: 14px;
+  }
+}

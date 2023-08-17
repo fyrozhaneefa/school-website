@@ -24,6 +24,7 @@ import Image16 from "../Assets/GalleryPictures/Navarathri/1.jpg";
 import Image17 from "../Assets/GalleryPictures/Navarathri/2.jpg";
 import Image18 from "../Assets/GalleryPictures/Navarathri/6.jpg";
 import Image19 from "../Assets/GalleryPictures/Navarathri/8.jpg";
+// import Image20 from "../Assets/MultipleGalleryImages/POTTORE/12.jpg";
 import Image20 from "../Assets/GalleryPictures/Navarathri/9.jpg";
 
 import { useState } from "react";
@@ -67,6 +68,16 @@ const PhotoGallery = ({ pageRef, pageNumber }) => {
 
   const openModal2 = (index) => {
     setSelectedImage(images2[index]);
+    setModalIsOpen(true);
+    console.log(index);
+  };
+  const openModal3 = (index) => {
+    setSelectedImage(images3[index]);
+    setModalIsOpen(true);
+    console.log(index);
+  };
+  const openModal4 = (index) => {
+    setSelectedImage(images4[index]);
     setModalIsOpen(true);
     console.log(index);
   };
@@ -136,7 +147,7 @@ const PhotoGallery = ({ pageRef, pageNumber }) => {
               return (
                 <div className="image-container" key={index}>
                   <img src={items} alt="Image1" />
-                  <AiOutlinePlus onClick={() => openModal2(index)} />
+                  <AiOutlinePlus onClick={() => openModal3(index)} />
                 </div>
               );
             })}
@@ -148,7 +159,7 @@ const PhotoGallery = ({ pageRef, pageNumber }) => {
               return (
                 <div className="image-container" key={index}>
                   <img src={items} alt="Image1" />
-                  <AiOutlinePlus onClick={() => openModal2(index)} />
+                  <AiOutlinePlus onClick={() => openModal4(index)} />
                 </div>
               );
             })}

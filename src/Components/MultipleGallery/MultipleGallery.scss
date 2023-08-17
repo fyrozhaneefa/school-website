@@ -17,7 +17,7 @@
       height: 3px;
       background-color: #003a6a;
       text-align: center;
-      margin: auto; 
+      margin: auto;
     }
     .header-bottom {
       color: #3c4276;
@@ -47,10 +47,13 @@
   }
   .close-btn {
     // position: relative;
+    position: sticky;
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
     font-size: 2em;
+    /* right: 1em; */
+    top: -0.5em;
   }
 
   .modal-content {
@@ -58,22 +61,25 @@
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     padding: 1.5em;
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 70em;
+    max-height: 42em;
     overflow-y: auto;
     text-align: center;
   }
 
   .image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    // display: grid;
+    // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .square-box {
     position: relative;
-    width: 200px;
-    height: 100px;
+    width: 60em;
+    height: 40em;
     overflow: hidden;
   }
 

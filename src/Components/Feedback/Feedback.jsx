@@ -50,157 +50,6 @@ const Feedback = ({ pageRef, pageNumber }) => {
           activeIndex={index}
           onSelect={handleSelect}
         >
-          {/* 2019 */}
-          <Carousel.Item className="carousel-container">
-            <Row>
-              <Col md={12}>
-                <Row className="carousel-Header">
-                  <Col md={12} className="carousel-Header-text">
-                    <h4>JAGARAN 2019</h4>
-                  </Col>
-                </Row>
-                <Row className="carousel-body">
-                  <span>
-                    Powerful Motivational Speaker& Awakener with a Doctorate in
-                    PersonalityDevelopment
-                  </span>
-                  <p>
-                    Creative Awareness on How to be a Powerful & Loving Teacher
-                  </p>
-                </Row>
-                <Row className="carousel-footer">
-                  <div className="carousel-footer-container">
-                    <div className="carousel-footer-icon">
-                      <img src={MAANEY} alt="" />
-                    </div>
-                    <div className="carousel-footer-text">
-                      <h4>DR.MAANEY PAUL</h4>
-                      <span></span>
-                    </div>
-                  </div>
-                </Row>
-              </Col>
-            </Row>
-          </Carousel.Item>
-          <Carousel.Item className="carousel-container">
-            <Row>
-              <Col md={12}>
-                <Row className="carousel-Header">
-                  <Col md={12} className="carousel-Header-text">
-                    <h4>JAGARAN 2019</h4>
-                  </Col>
-                </Row>
-                <Row className="carousel-body">
-                  <span>
-                    Principal RMK ResidentialSenior Secondary School, Chennai-
-                    CertifiedTeacher Trainer as Resource Person for CBSE,Centre
-                    of Excellence (Coe), Chennai
-                  </span>{" "}
-                  <p>
-                    Learning Outcomes, Innovative Teaching,Methodology & 21st
-                    Century Teaching
-                  </p>
-                </Row>
-                <Row className="carousel-footer">
-                  <div className="carousel-footer-container">
-                    <div className="carousel-footer-icon">
-                      <img src={Sapna} alt="" />
-                    </div>
-                    <div className="carousel-footer-text">
-                      <h4>Mrs.Sapna Sankla</h4>
-                      <span></span>
-                    </div>
-                  </div>
-                </Row>
-              </Col>
-            </Row>
-          </Carousel.Item>
-          <Carousel.Item className="carousel-container">
-            <Row>
-              <Col md={12}>
-                <Row className="carousel-Header">
-                  <Col md={12} className="carousel-Header-text">
-                    <h4>JAGARAN 2019</h4>
-                  </Col>
-                </Row>
-                <Row className="carousel-body">
-                  <span>Eminent Advocate</span>{" "}
-                  <p>Awareness of Legal Formalities</p>
-                </Row>
-                <Row className="carousel-footer">
-                  <div className="carousel-footer-container">
-                    <div className="carousel-footer-icon">
-                      <img src={Suresan} alt="" />
-                    </div>
-                    <div className="carousel-footer-text">
-                      <h4>A. Suresan</h4>
-                      <span></span>
-                    </div>
-                  </div>
-                </Row>
-              </Col>
-            </Row>
-          </Carousel.Item>
-          <Carousel.Item className="carousel-container">
-            <Row>
-              <Col md={12}>
-                <Row className="carousel-Header">
-                  <Col md={12} className="carousel-Header-text">
-                    <h4>JAGARAN 2019</h4>
-                  </Col>
-                </Row>
-                <Row className="carousel-body">
-                  <span>
-                    Former Vice-Chancellor, Health University and Renowned
-                    Paediatrician, Counsellor & Academician in the field of
-                    Child Development and Paediatrics.
-                  </span>{" "}
-                  <p>Child Development & Adolescence</p>
-                </Row>
-                <Row className="carousel-footer">
-                  <div className="carousel-footer-container">
-                    <div className="carousel-footer-icon">
-                      <img src={Nair} alt="" />
-                    </div>
-                    <div className="carousel-footer-text">
-                      <h4>Prof (Dr) MKC Nair</h4>
-                      <span></span>
-                    </div>
-                  </div>
-                </Row>
-              </Col>
-            </Row>
-          </Carousel.Item>
-          <Carousel.Item className="carousel-container">
-            <Row>
-              <Col md={12}>
-                <Row className="carousel-Header">
-                  <Col md={12} className="carousel-Header-text">
-                    <h4>JAGARAN 2019</h4>
-                  </Col>
-                </Row>
-                <Row className="carousel-body">
-                  <span>District Coordinator Childline</span>{" "}
-                  <p>Childline Activity</p>
-                </Row>
-                <Row className="carousel-footer">
-                  <div className="carousel-footer-container">
-                    <div className="carousel-footer-icon">
-                      <img
-                        // src={Jino}
-
-                        alt=""
-                      />
-                    </div>
-                    <div className="carousel-footer-text">
-                      <h4>Mr.Jino TD</h4>
-                      <span></span>
-                    </div>
-                  </div>
-                </Row>
-              </Col>
-            </Row>
-          </Carousel.Item>
           {/* 2020 */}
           <Carousel.Item className="carousel-container">
             <Row>
@@ -512,6 +361,157 @@ const Feedback = ({ pageRef, pageNumber }) => {
                     </div>
                     <div className="carousel-footer-text">
                       <h4>P Suresh Kumar</h4>
+                      <span></span>
+                    </div>
+                  </div>
+                </Row>
+              </Col>
+            </Row>
+          </Carousel.Item>
+          {/* 2019 */}
+          <Carousel.Item className="carousel-container">
+            <Row>
+              <Col md={12}>
+                <Row className="carousel-Header">
+                  <Col md={12} className="carousel-Header-text">
+                    <h4>JAGARAN 2019</h4>
+                  </Col>
+                </Row>
+                <Row className="carousel-body">
+                  <span>
+                    Powerful Motivational Speaker& Awakener with a Doctorate in
+                    PersonalityDevelopment
+                  </span>
+                  <p>
+                    Creative Awareness on How to be a Powerful & Loving Teacher
+                  </p>
+                </Row>
+                <Row className="carousel-footer">
+                  <div className="carousel-footer-container">
+                    <div className="carousel-footer-icon">
+                      <img src={MAANEY} alt="" />
+                    </div>
+                    <div className="carousel-footer-text">
+                      <h4>DR.MAANEY PAUL</h4>
+                      <span></span>
+                    </div>
+                  </div>
+                </Row>
+              </Col>
+            </Row>
+          </Carousel.Item>
+          <Carousel.Item className="carousel-container">
+            <Row>
+              <Col md={12}>
+                <Row className="carousel-Header">
+                  <Col md={12} className="carousel-Header-text">
+                    <h4>JAGARAN 2019</h4>
+                  </Col>
+                </Row>
+                <Row className="carousel-body">
+                  <span>
+                    Principal RMK ResidentialSenior Secondary School, Chennai-
+                    CertifiedTeacher Trainer as Resource Person for CBSE,Centre
+                    of Excellence (Coe), Chennai
+                  </span>{" "}
+                  <p>
+                    Learning Outcomes, Innovative Teaching,Methodology & 21st
+                    Century Teaching
+                  </p>
+                </Row>
+                <Row className="carousel-footer">
+                  <div className="carousel-footer-container">
+                    <div className="carousel-footer-icon">
+                      <img src={Sapna} alt="" />
+                    </div>
+                    <div className="carousel-footer-text">
+                      <h4>Mrs.Sapna Sankla</h4>
+                      <span></span>
+                    </div>
+                  </div>
+                </Row>
+              </Col>
+            </Row>
+          </Carousel.Item>
+          <Carousel.Item className="carousel-container">
+            <Row>
+              <Col md={12}>
+                <Row className="carousel-Header">
+                  <Col md={12} className="carousel-Header-text">
+                    <h4>JAGARAN 2019</h4>
+                  </Col>
+                </Row>
+                <Row className="carousel-body">
+                  <span>Eminent Advocate</span>{" "}
+                  <p>Awareness of Legal Formalities</p>
+                </Row>
+                <Row className="carousel-footer">
+                  <div className="carousel-footer-container">
+                    <div className="carousel-footer-icon">
+                      <img src={Suresan} alt="" />
+                    </div>
+                    <div className="carousel-footer-text">
+                      <h4>A. Suresan</h4>
+                      <span></span>
+                    </div>
+                  </div>
+                </Row>
+              </Col>
+            </Row>
+          </Carousel.Item>
+          <Carousel.Item className="carousel-container">
+            <Row>
+              <Col md={12}>
+                <Row className="carousel-Header">
+                  <Col md={12} className="carousel-Header-text">
+                    <h4>JAGARAN 2019</h4>
+                  </Col>
+                </Row>
+                <Row className="carousel-body">
+                  <span>
+                    Former Vice-Chancellor, Health University and Renowned
+                    Paediatrician, Counsellor & Academician in the field of
+                    Child Development and Paediatrics.
+                  </span>{" "}
+                  <p>Child Development & Adolescence</p>
+                </Row>
+                <Row className="carousel-footer">
+                  <div className="carousel-footer-container">
+                    <div className="carousel-footer-icon">
+                      <img src={Nair} alt="" />
+                    </div>
+                    <div className="carousel-footer-text">
+                      <h4>Prof (Dr) MKC Nair</h4>
+                      <span></span>
+                    </div>
+                  </div>
+                </Row>
+              </Col>
+            </Row>
+          </Carousel.Item>
+          <Carousel.Item className="carousel-container">
+            <Row>
+              <Col md={12}>
+                <Row className="carousel-Header">
+                  <Col md={12} className="carousel-Header-text">
+                    <h4>JAGARAN 2019</h4>
+                  </Col>
+                </Row>
+                <Row className="carousel-body">
+                  <span>District Coordinator Childline</span>{" "}
+                  <p>Childline Activity</p>
+                </Row>
+                <Row className="carousel-footer">
+                  <div className="carousel-footer-container">
+                    <div className="carousel-footer-icon">
+                      <img
+                        // src={Jino}
+
+                        alt=""
+                      />
+                    </div>
+                    <div className="carousel-footer-text">
+                      <h4>Mr.Jino TD</h4>
                       <span></span>
                     </div>
                   </div>

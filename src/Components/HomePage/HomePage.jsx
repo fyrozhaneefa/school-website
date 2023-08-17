@@ -1,15 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // import Navbar from "../Navbar/Navbar";
 import "./Homepage.css";
 import Image1 from "../Assets/WebsiteImages/homepage1.png";
 import Image2 from "../Assets/WebsiteImages/homepage2.png";
 import Image3 from "../Assets/WebsiteImages/homepage3.png";
+import broshure from "../Assets/WebsiteImages/broshure.png";
 // import Image4 from "../Assets/WebsiteImages/04.jpg";
 // import Image5 from "../Assets/WebsiteImages/05.jpg";
-import { Col, Row } from "react-bootstrap";
+// import { Col, Row } from "react-bootstrap";
 
 const HomePage = ({ pageRef, pageNumber }) => {
   const [index, setIndex] = useState(0);
+  const [brochureOpen, setBrochureOpen] = useState(true);
+  const brochureRef = useRef(null);
 
   const images = [Image1, Image2, Image3];
 
@@ -31,108 +34,141 @@ const HomePage = ({ pageRef, pageNumber }) => {
     transition: "background-image 1s ease-out",
   };
 
+  // const handleBrochureOpen = () => {
+  //   setBrochureOpen(true);
+  // };
+
+  const handleBrochureClose = (e) => {
+    // Check if the click occurred outside the brochure image
+    if (brochureRef.current && !brochureRef.current.contains(e.target)) {
+      setBrochureOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // Attach the event listener when the brochure is open
+    if (brochureOpen) {
+      document.addEventListener("click", handleBrochureClose);
+    } else {
+      document.removeEventListener("click", handleBrochureClose);
+    }
+    // Clean up the event listener when the component unmounts or when the brochure is closed
+    return () => {
+      document.removeEventListener("click", handleBrochureClose);
+    };
+  }, [brochureOpen]);
   return (
     <div className="wraper" ref={pageRef} id={`page-${pageNumber}`}>
       <div className="home-page" style={style}>
         <div className="container">
           <div className="inside">
             {/* <Row>
-              <Col md="6">
-                <div className="date-box">
-                  <div className="date-left">
-                    <span>Departure On</span>
-                    <span>25 JAN</span>
-                    <span>2023</span>
-                  </div>
-                  <div className="date-right">
-                    Sorry Folks, try our next Tour!
-                  </div>
-                </div>
-              </Col>
-              <Col md="6">
-                <div className="subscribe-box">
-                  <div className="subscribe-box-left">
-                    <Row className="w-100">
-                      <Col md={6} className="input-s">
-                        <div className="w-100">
-                          <input
-                            className="input-fields w-100"
-                            type="text"
-                            placeholder="First Name"
-                          />
-                        </div>
-                      </Col>
-                      <Col md={6}>
-                        <div className="w-100">
-                          <input
-                            className="input-fields w-100"
-                            type="text"
-                            placeholder="Last Name"
-                          />
-                        </div>
-                      </Col>
-                    </Row>
-                    <div className="mt-4">
-                      <input
-                        className="input-fields w-100"
-                        type="text"
-                        placeholder="Enter email address here..."
-                      />
+                <Col md="6">
+                  <div className="date-box">
+                    <div className="date-left">
+                      <span>Departure On</span>
+                      <span>25 JAN</span>
+                      <span>2023</span>
+                    </div>
+                    <div className="date-right">
+                      Sorry Folks, try our next Tour!
                     </div>
                   </div>
-                  <div className="subscribe-box-right">
-                    <span>SUBSCRIBE TO GET UPDATES</span>
+                </Col>
+                <Col md="6">
+                  <div className="subscribe-box">
+                    <div className="subscribe-box-left">
+                      <Row className="w-100">
+                        <Col md={6} className="input-s">
+                          <div className="w-100">
+                            <input
+                              className="input-fields w-100"
+                              type="text"
+                              placeholder="First Name"
+                            />
+                          </div>
+                        </Col>
+                        <Col md={6}>
+                          <div className="w-100">
+                            <input
+                              className="input-fields w-100"
+                              type="text"
+                              placeholder="Last Name"
+                            />
+                          </div>
+                        </Col>
+                      </Row>
+                      <div className="mt-4">
+                        <input
+                          className="input-fields w-100"
+                          type="text"
+                          placeholder="Enter email address here..."
+                        />
+                      </div>
+                    </div>
+                    <div className="subscribe-box-right">
+                      <span>SUBSCRIBE TO GET UPDATES</span>
+                    </div>
                   </div>
-                </div>
-              </Col>
-            </Row> */}
+                </Col>
+              </Row> */}
           </div>
           {/* <div className="home-page-container">
-            <Row>
-              <Col md={6}>
-                <div className="date-box">
-                  <div className="date-left">
-                    <span>Departure On</span>
-                    <span>25 JAN</span>
-                    <span>2023</span>
+              <Row>
+                <Col md={6}>
+                  <div className="date-box">
+                    <div className="date-left">
+                      <span>Departure On</span>
+                      <span>25 JAN</span>
+                      <span>2023</span>
+                    </div>
+                    <div className="date-right">
+                      Sorry Folks, try our next Tour!
+                    </div>
                   </div>
-                  <div className="date-right">
-                    Sorry Folks, try our next Tour!
-                  </div>
-                </div>
-              </Col>
-              <Col md={6} className="subscribe-box">
-                <div className="subscribe-box-input w-60 ">
-                  <div>
-                    <div className="d-flex">
+                </Col>
+                <Col md={6} className="subscribe-box">
+                  <div className="subscribe-box-input w-60 ">
+                    <div>
+                      <div className="d-flex">
+                        <input
+                          className="input-fields"
+                          type="text"
+                          placeholder="First Name"
+                        />
+                        <input
+                          className="input-fields"
+                          type="text"
+                          placeholder="Last Name"
+                        />
+                      </div>
                       <input
                         className="input-fields"
                         type="text"
-                        placeholder="First Name"
-                      />
-                      <input
-                        className="input-fields"
-                        type="text"
-                        placeholder="Last Name"
+                        placeholder="Enter Your Email Address Here..."
                       />
                     </div>
-                    <input
-                      className="input-fields"
-                      type="text"
-                      placeholder="Enter Your Email Address Here..."
-                    />
                   </div>
-                </div>
-                <div className="subscribe-box-icon w-40 d-flex justify-content-center align-items-center">
-                  <span className="subscribe-text">
-                    SUBSCRIBE TO GET UPDATES
-                  </span>
-                </div>
-              </Col>
-            </Row>
-          </div> */}
+                  <div className="subscribe-box-icon w-40 d-flex justify-content-center align-items-center">
+                    <span className="subscribe-text">
+                      SUBSCRIBE TO GET UPDATES
+                    </span>
+                  </div>
+                </Col>
+              </Row>
+            </div> */}
         </div>
-
+        {brochureOpen && (
+          <div ref={brochureRef} className="brochure-container">
+            <img src={broshure} alt="Brochure" className="brochure-image" />
+            <button
+              className="close-button"
+              onClick={() => setBrochureOpen(false)}
+            >
+              X
+            </button>
+          </div>
+        )}
         <div />
       </div>
     </div>

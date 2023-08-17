@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 // import { Col, Row } from "react-bootstrap";
 
 import "./App.css";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import TravelInfoCarousel from "./Components/Carousel/Carousel";
 import Navbar from "./Components/Navbar/Navbar";
 import HomePage from "./Components/HomePage/HomePage";
@@ -14,9 +15,12 @@ import Feedback from "./Components/Feedback/Feedback";
 import CenterofExcellence from "./Components/CenterofExcellence/CenterofExcellence";
 // import BvbWelcome from "./Components/Itinarary/BvbWelcome";
 import MultipleGallery from "./Components/MultipleGallery/MultipleGallery";
+import Management from "./Components/Management/Management";
+// import TeacherTraining from "./Components/Info/TeacherTraining/TeacherTraining";
 
 function App() {
   const pageRefs = [
+    useRef(null),
     useRef(null),
     useRef(null),
     useRef(null),
@@ -31,18 +35,24 @@ function App() {
     pageRefs[pageNumber].current.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="App">
-      <HomePage className="banner" pageRef={pageRefs[0]} pageNumber={1} />
-      <Navbar scrollToPage={scrollToPage} />
-      <Documentations pageRef={pageRefs[1]} pageNumber={2} />
-      <Itinarary pageRef={pageRefs[2]} pageNumber={3} />
-      <Feedback pageRef={pageRefs[3]} pageNumber={4} />
-      <CenterofExcellence pageRef={pageRefs[4]} pageNumber={5} />
-      <PhotoGallery pageRef={pageRefs[5]} pageNumber={6} />
-      <MultipleGallery pageRef={pageRefs[6]} pageNumber={7} />
-      <Info pageRef={pageRefs[7]} pageNumber={8} />
-      <Contact pageRef={pageRefs[8]} pageNumber={9} />
-    </div>
+    <>
+      {/* <Routes>
+        <Route path="/teacher-training" element={<TeacherTraining />} />
+      </Routes> */}
+      <div className="App">
+        <HomePage className="banner" pageRef={pageRefs[0]} pageNumber={1} />
+        <Navbar scrollToPage={scrollToPage} />
+        <Documentations pageRef={pageRefs[1]} pageNumber={2} />
+        <Itinarary pageRef={pageRefs[2]} pageNumber={3} />
+        <Feedback pageRef={pageRefs[3]} pageNumber={4} />
+        <CenterofExcellence pageRef={pageRefs[4]} pageNumber={5} />
+        <Management pageRef={pageRefs[5]} pageNumber={6} />
+        <PhotoGallery pageRef={pageRefs[6]} pageNumber={7} />
+        <MultipleGallery pageRef={pageRefs[7]} pageNumber={8} />
+        <Info pageRef={pageRefs[8]} pageNumber={9} />
+        <Contact pageRef={pageRefs[9]} pageNumber={10} />
+      </div>
+    </>
   );
 }
 

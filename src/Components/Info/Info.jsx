@@ -148,7 +148,7 @@ const Info = ({ pageRef, pageNumber }) => {
               </div>
               <div className="icon-text-div">
                 {/* <span>(+91) 93887 80503</span> */}
-                <span>(+91) 93887 80522</span>
+                <span>(+91) 93887 80503</span>
               </div>
             </div>
           </Col>

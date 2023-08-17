@@ -38,6 +38,18 @@ const Documentations = ({ pageRef, pageNumber }) => {
               </Col>
               <Col md={6} className="doc-right-container">
                 <div>
+                  <Row>
+                    <div className="doc-right-header">OUR MISSION</div>
+                    <div className="doc-right">
+                      To insure that our students acquire the necessary
+                      knowledge, skills, and abilities to perform successfully
+                      in the modern world as engineers, and to install in them
+                      ability for life-long learning and a sense of professional
+                      responsibility that will enable them to continue their
+                      professional development throughout their careers.
+                    </div>
+                  </Row>
+                  <hr />
                   <Row style={{ marginBottom: "2rem" }}>
                     <div className="doc-right-header">OUR VISION</div>
                     <div className="doc-right">
@@ -50,18 +62,6 @@ const Documentations = ({ pageRef, pageNumber }) => {
                       in this: whether the ‘best’ among those who belong to it
                       however small their number find self-fulfillment by living
                       up to the fundamental values of our ageless culture.
-                    </div>
-                  </Row>
-                  <hr />
-                  <Row>
-                    <div className="doc-right-header">OUR MISSION</div>
-                    <div className="doc-right">
-                      To insure that our students acquire the necessary
-                      knowledge, skills, and abilities to perform successfully
-                      in the modern world as engineers, and to install in them
-                      ability for life-long learning and a sense of professional
-                      responsibility that will enable them to continue their
-                      professional development throughout their careers.
                     </div>
                   </Row>
                 </div>
