@@ -4,14 +4,16 @@
   color: white;
 }
 .navbar-item-container {
-  gap: 0.75em;
+  // gap: 0.25em;
 }
-
+.me-auto {
+  padding-left: 2em;
+}
 .navbar-item-container a {
   color: white;
 }
 .teacherModal {
-  font-weight: 500;
+  font-weight: 400;
   .modal-description {
     background-color: #eaeaf4;
   }
@@ -50,8 +52,16 @@
     }
   }
 }
-@media only screen and (max-width: 1400) {
+@media only screen and (max-width: 1400px) {
   .navbar-item-container {
     font-size: 14px;
   }
+}
+@media only screen and (max-width: 900px) {
+  .navbar-item-container {
+    font-size: 14px;
+  }
+}
+.navbar-collapse {
+  // overflow: auto;
 }

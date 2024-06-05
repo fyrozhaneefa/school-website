@@ -1,32 +1,24 @@
 import React, { useEffect, useRef, useState } from "react";
-// import Navbar from "../Navbar/Navbar";
 import "./Homepage.css";
-import Image1 from "../Assets/WebsiteImages/homepage1.png";
-import Image2 from "../Assets/WebsiteImages/homepage2.png";
-import Image3 from "../Assets/WebsiteImages/homepage3.png";
 import broshure from "../Assets/WebsiteImages/broshure.png";
-// import Image4 from "../Assets/WebsiteImages/04.jpg";
-// import Image5 from "../Assets/WebsiteImages/05.jpg";
-// import { Col, Row } from "react-bootstrap";
 
 const HomePage = ({ pageRef, pageNumber }) => {
   const [index, setIndex] = useState(0);
   const [brochureOpen, setBrochureOpen] = useState(true);
+  const [Data, setData] = useState([]);
   const brochureRef = useRef(null);
-
-  const images = [Image1, Image2, Image3];
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setIndex((index + 1) % images.length);
-    }, 5000);
+      setIndex((prevIndex) => (prevIndex + 1) % Data.length);
+    }, 5000); // Adjust this value based on your desired rotation speed
     return () => clearInterval(intervalId);
-  }, [index, images.length]);
+  }, [Data]);
 
   const style = {
-    backgroundImage: `url(${images[index]})`,
+    backgroundImage: `url(${Data.length > 0 ? Data[index].banner_image : ""})`,
     backgroundSize: "cover",
-    backgroundRepeat: "repeat",
+    // backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
     width: "100%",
     height: "calc(100vh - 70px)",
@@ -34,25 +26,49 @@ const HomePage = ({ pageRef, pageNumber }) => {
     transition: "background-image 1s ease-out",
   };
 
-  // const handleBrochureOpen = () => {
-  //   setBrochureOpen(true);
-  // };
+  const fetchData = async () => {
+    try {
+      const response = await fetch(
+        "https://bvbthrissur.com/bvb_admin/index.php/Banner_list",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        }
+      );
 
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      const result = await response.json();
+      setData(result.data?.banners);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    console.log("banner Data", Data);
+  }, [Data]);
   const handleBrochureClose = (e) => {
-    // Check if the click occurred outside the brochure image
     if (brochureRef.current && !brochureRef.current.contains(e.target)) {
       setBrochureOpen(false);
     }
   };
 
   useEffect(() => {
-    // Attach the event listener when the brochure is open
     if (brochureOpen) {
       document.addEventListener("click", handleBrochureClose);
     } else {
       document.removeEventListener("click", handleBrochureClose);
     }
-    // Clean up the event listener when the component unmounts or when the brochure is closed
     return () => {
       document.removeEventListener("click", handleBrochureClose);
     };
@@ -158,7 +174,7 @@ const HomePage = ({ pageRef, pageNumber }) => {
               </Row>
             </div> */}
         </div>
-        {brochureOpen && (
+        {/* {brochureOpen && (
           <div ref={brochureRef} className="brochure-container">
             <img src={broshure} alt="Brochure" className="brochure-image" />
             <button
@@ -168,7 +184,7 @@ const HomePage = ({ pageRef, pageNumber }) => {
               X
             </button>
           </div>
-        )}
+        )} */}
         <div />
       </div>
     </div>

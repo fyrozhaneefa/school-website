@@ -12,6 +12,8 @@ import {
   TiSocialYoutube,
 } from "react-icons/ti";
 import "./Info.scss";
+import logo from "../Assets/logo/logo.png";
+
 import { IoMail } from "react-icons/io5";
 
 const Info = ({ pageRef, pageNumber }) => {
@@ -26,7 +28,8 @@ const Info = ({ pageRef, pageNumber }) => {
                   <Col md={12}>
                     <img
                       className="main-header-text col-md-6 col-sm-6 col-xs-12"
-                      src="http://www.bvbthrissur.com/images/logo1.png"
+                      // src="http://www.bvbthrissur.com/images/logo1.png"
+                      src={logo}
                       alt="Bhavans logo"
                     />
                   </Col>

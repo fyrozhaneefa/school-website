@@ -77,15 +77,17 @@
       padding: 0.5em 3em 1em;
       border-width: 3px;
       justify-content: center;
+      margin-bottom: 2.5em;
       // flex-wrap: nowrap;
       .carousel-footer-container {
         display: contents;
       }
       .carousel-footer-icon {
         width: 100px;
-        height: 120px;
+        // height: 12 0px;
+        height: 100px;
         // justify-content: flex-end;
-        // padding-right: 0.5em;
+        // margin-bottom: 1.5em;
         border-radius: 50%;
 
         img {
@@ -93,6 +95,7 @@
           height: 100%;
           object-fit: cover;
           border-radius: 50%;
+          //  box-shadow: 5px 5px 10px #484848, -5px -5px 10px #484848;
         }
       }
       .carousel-footer-text {
@@ -100,7 +103,7 @@
         display: flex;
         align-self: center;
         padding-left: 0.5em;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         flex-direction: column;
         align-items: center;
         color: #000000;

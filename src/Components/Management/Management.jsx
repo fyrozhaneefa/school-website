@@ -119,7 +119,7 @@ const Management = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-Header">
                   <Col md={12} className="carousel-Header-text">
-                    <h4>VICE-CHAIRMEN</h4>
+                    <h4>VICE-CHAIRMAN</h4>
                   </Col>
                 </Row>
                 <Row className="carousel-body">
@@ -149,7 +149,7 @@ const Management = ({ pageRef, pageNumber }) => {
                 </Row>
                 <Row className="carousel-Header">
                   <Col md={12} className="carousel-Header-text">
-                    <h4>VICE-CHAIRMEN</h4>
+                    <h4>VICE-CHAIRMAN</h4>
                   </Col>
                 </Row>
                 <Row className="carousel-body">

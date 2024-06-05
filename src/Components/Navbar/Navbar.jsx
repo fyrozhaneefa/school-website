@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 import { FaHome } from "react-icons/fa";
 import logo from "../Assets/logo/logo.png";
-import { Dropdown } from "react-bootstrap";
+import { Dropdown, NavDropdown } from "react-bootstrap";
 import DropdownItem from "react-bootstrap/esm/DropdownItem";
 import TeachersTraining from "./TeachersTraining";
 import ProspectusPDF from "../Assets/pdf/Prospectus.pdf";
@@ -73,38 +73,65 @@ const NavbarResponsive = ({ scrollToPage }) => {
       <Navbar
         collapseOnSelect
         expand="xxl"
+        // style={{ maxWidth: "100%" }}
         sticky="top"
         className="navbar-main"
       >
-        <Container>
+        <Container fluid>
           <Navbar.Brand onClick={() => scrollToPage(0)} className="me-auto">
             <img src={logo} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto navbar-item-container">
+              {/* <Nav.Link onClick={() => scrollToPage(0)}></Nav.Link> */}
               <Nav.Link onClick={() => scrollToPage(0)}>
                 <FaHome size={25} color="#fff" />
               </Nav.Link>
               <Nav.Link onClick={() => scrollToPage(1)}>INFO</Nav.Link>
               {/* <Nav.Link onClick={() => scrollToPage(2)}>FACILITIES</Nav.Link> */}
-              <Nav.Link onClick={() => scrollToPage(2)}>ITINARARY</Nav.Link>
+              <Nav.Link onClick={() => scrollToPage(2)}>NEWS</Nav.Link>
+              <Nav.Link onClick={() => scrollToPage(3)}>ITINARARY</Nav.Link>
+              <Nav.Link onClick={() => scrollToPage(8)}>BALAMANDIR</Nav.Link>
+              <Nav.Link onClick={() => scrollToPage(11)}>NIOS</Nav.Link>
               <Nav.Link
-                onClick={() => scrollToPage(3)}
+                onClick={() => scrollToPage()}
                 style={{ whiteSpace: "nowrap" }}
+                href="https://bvbpoochatty.in/"
+                target="_blank"
+              >
+                BVB POOCHATTY
+              </Nav.Link>
+              <Nav.Link
+                onClick={() => scrollToPage()}
+                style={{ whiteSpace: "nowrap" }}
+                href="https://www.bvbpottore.com/"
+                target="_blank"
               >
                 {" "}
-                ENRICHMENT PROGRAM
+                KMBVM POTTORE
               </Nav.Link>
               <Nav.Link
                 onClick={() => scrollToPage(4)}
                 style={{ whiteSpace: "nowrap" }}
               >
+                ENRICHMENT PROGRAM
+              </Nav.Link>
+              <Nav.Link
+                onClick={() => scrollToPage(5)}
+                style={{ whiteSpace: "nowrap" }}
+              >
                 CENTRE OF EXCELLENCE
               </Nav.Link>
-              <Nav.Link onClick={() => scrollToPage(6)}>GALLERY</Nav.Link>
-              <Nav.Link onClick={() => scrollToPage(8)}>ABOUT</Nav.Link>
+              <Nav.Link
+                onClick={() => scrollToPage(6)}
+                style={{ whiteSpace: "nowrap" }}
+              >
+                COMMITTEE
+              </Nav.Link>
+              <Nav.Link onClick={() => scrollToPage(7)}>GALLERY</Nav.Link>
               <Nav.Link onClick={() => scrollToPage(9)}>CONTACT</Nav.Link>
+
               <Dropdown show={showDropdown} onToggle={(e) => toggleDropdown(e)}>
                 <Dropdown.Toggle as={Nav.Link} style={{ whiteSpace: "nowrap" }}>
                   {/* QUICK  */}

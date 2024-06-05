@@ -101,7 +101,7 @@ const Feedback = ({ pageRef, pageNumber }) => {
                       <img src={Sethumadhavan} alt="" />
                     </div>
                     <div className="carousel-footer-text">
-                      <h4>Dr TP Sethumadhavan</h4>
+                      <h4>Dr T P Sethumadhavan</h4>
                       <span></span>
                     </div>
                   </div>
@@ -130,7 +130,7 @@ const Feedback = ({ pageRef, pageNumber }) => {
                       <img src={Sreekumar} alt="" />
                     </div>
                     <div className="carousel-footer-text">
-                      <h4>Dr KP Sreekumar</h4>
+                      <h4>Dr K P Sreekumar</h4>
                       <span></span>
                     </div>
                   </div>
@@ -392,7 +392,7 @@ const Feedback = ({ pageRef, pageNumber }) => {
                       <img src={MAANEY} alt="" />
                     </div>
                     <div className="carousel-footer-text">
-                      <h4>DR.MAANEY PAUL</h4>
+                      <h4>Dr. MAANEY PAUL</h4>
                       <span></span>
                     </div>
                   </div>
@@ -481,7 +481,7 @@ const Feedback = ({ pageRef, pageNumber }) => {
                       <img src={Nair} alt="" />
                     </div>
                     <div className="carousel-footer-text">
-                      <h4>Prof (Dr) MKC Nair</h4>
+                      <h4>Prof (Dr) M K C Nair</h4>
                       <span></span>
                     </div>
                   </div>
@@ -511,7 +511,7 @@ const Feedback = ({ pageRef, pageNumber }) => {
                       />
                     </div>
                     <div className="carousel-footer-text">
-                      <h4>Mr.Jino TD</h4>
+                      <h4>Mr.Jino T D</h4>
                       <span></span>
                     </div>
                   </div>

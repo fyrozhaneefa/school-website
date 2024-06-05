@@ -16,10 +16,15 @@ import CenterofExcellence from "./Components/CenterofExcellence/CenterofExcellen
 // import BvbWelcome from "./Components/Itinarary/BvbWelcome";
 import MultipleGallery from "./Components/MultipleGallery/MultipleGallery";
 import Management from "./Components/Management/Management";
+import News from "./Components/News/News";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
+import Nios from "./Components/Nios/Nios";
 // import TeacherTraining from "./Components/Info/TeacherTraining/TeacherTraining";
 
 function App() {
   const pageRefs = [
+    useRef(null),
+    useRef(null),
     useRef(null),
     useRef(null),
     useRef(null),
@@ -43,14 +48,34 @@ function App() {
         <HomePage className="banner" pageRef={pageRefs[0]} pageNumber={1} />
         <Navbar scrollToPage={scrollToPage} />
         <Documentations pageRef={pageRefs[1]} pageNumber={2} />
-        <Itinarary pageRef={pageRefs[2]} pageNumber={3} />
-        <Feedback pageRef={pageRefs[3]} pageNumber={4} />
-        <CenterofExcellence pageRef={pageRefs[4]} pageNumber={5} />
-        <Management pageRef={pageRefs[5]} pageNumber={6} />
-        <PhotoGallery pageRef={pageRefs[6]} pageNumber={7} />
-        <MultipleGallery pageRef={pageRefs[7]} pageNumber={8} />
-        <Info pageRef={pageRefs[8]} pageNumber={9} />
-        <Contact pageRef={pageRefs[9]} pageNumber={10} />
+        <News pageRef={pageRefs[2]} pageNumber={3} />
+        <Itinarary pageRef={pageRefs[3]} pageNumber={4} />
+        <MultipleGallery pageRef={pageRefs[8]} pageNumber={9} />
+        <Nios pageRef={pageRefs[11]} pageNumber={12} />
+        <Feedback pageRef={pageRefs[4]} pageNumber={5} />
+        <CenterofExcellence pageRef={pageRefs[5]} pageNumber={6} />
+        <Management pageRef={pageRefs[6]} pageNumber={7} />
+        <PhotoGallery pageRef={pageRefs[7]} pageNumber={8} />
+        <Info pageRef={pageRefs[9]} pageNumber={10} />
+        <Contact pageRef={pageRefs[10]} pageNumber={11} />
+        <div className="social-icons">
+          <a
+            href="https://www.instagram.com/bvbk.t/"
+            target="_blank"
+            className="insta"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://www.facebook.com/bvbk.t"
+            target="_blank"
+            className="fb"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook />
+          </a>
+        </div>
       </div>
     </>
   );

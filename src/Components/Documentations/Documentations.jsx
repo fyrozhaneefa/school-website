@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./Documentations.css";
+import { FaArrowRight } from "react-icons/fa";
 // import building from "../Assets/Images/doc_left_img.png";
 const Documentations = ({ pageRef, pageNumber }) => {
   return (
@@ -15,6 +16,68 @@ const Documentations = ({ pageRef, pageNumber }) => {
                 </div> */}
                 <Row>
                   <Col md={12}>
+                    <Row>
+                      <div className="d-flex gap-5">
+                        <div className="career">
+                          <a
+                            style={{ textDecoration: "none" }}
+                            href="https://bvbthrissurjobs.sparkitts.com/latestjob"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <span>
+                              Careers
+                              {/* <FaArrowRight /> */}
+                            </span>
+                          </a>
+                        </div>
+                        <div className="career">
+                          <a
+                            style={{ textDecoration: "none" }}
+                            href="https://bvbthrissur.amserp.in"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <span>
+                              Pay Online
+                              {/* <FaArrowRight /> */}
+                            </span>
+                          </a>
+                        </div>
+                        <div className="career">
+                          <a
+                            style={{
+                              textDecoration: "none",
+                              whiteSpace: "nowrap",
+                            }}
+                            href="https://bvbthrissur.amserp.in/index.php/user/login/loginguest"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <span>
+                              Student Application
+                              {/* <FaArrowRight /> */}
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      {/* <div className="career">
+                          <div class="loader">
+                        <div
+                          data-glitch="CAREERS"
+                          class="glitch"
+                          title="CAREERS"
+                        >
+                          <a
+                            href="https://bvbthrissurjobs.sparkitts.com/latestjob"
+                            target="_blank"
+                          >
+                            CAREERS
+                          </a>
+                        </div>
+                      </div>
+                        </div> */}
+                    </Row>
                     <h2 className="main-header-text">
                       LET NOBLE THOUGHTS COME TO US FROM EVERY SIDE...{" "}
                     </h2>
